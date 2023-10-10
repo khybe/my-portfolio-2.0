@@ -1,0 +1,137 @@
+/* Styles for the hero section */
+#hero {
+  position: relative;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/* Styles for the content within the hero section */
+.heroContent {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 16rem; /* Margin from the top of the hero section */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the tagline text */
+.tagline {
+  font-size: 1.8rem;
+  padding-top: 3rem; /* Spacing above the tagline */
+  font-weight: 600;
+}
+
+/* Styles for the span within the tagline text */
+.tagline span {
+  color: var(--color-rustic-red); /* Apply a custom color to the span */
+}
+
+/* Styles for the motto container */
+.mottoContainer {
+  max-width: 80rem;
+  margin: auto;
+  font-size: 1.4rem;
+  margin-top: 4rem; /* Margin from the top of the motto container */
+  padding: 0 1rem; /* Padding on the sides of the motto container */
+}
+
+/* Styles for images within the motto container */
+.mottoContainer img {
+  height: 8rem; /* Initial height of the image */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect on hover */
+}
+
+/* Styles for image transformation on hover */
+.mottoContainer img:hover {
+  transform: scale(1.2); /* Scale the image to 120% on hover */
+}
+
+/* Styles for the hello anime container */
+.helloAnimeContainer {
+  max-width: 80rem;
+  position: absolute;
+  top: 6rem; /* Position from the top of the hero section */
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1; /* Set a negative z-index to position it behind other content */
+}
+
+/* Styles for images within the hello anime container */
+.helloAnimeContainer img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio for images */
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 400px) {
+  .heroContent {
+    margin-top: 18rem;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .mottoContainer {
+    font-size: 1.6rem;
+  }
+
+  .mottoContainer img {
+    height: 9rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .heroContent {
+    margin-top: 22rem;
+  }
+
+  .tagline {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .heroContent {
+    margin-top: 24rem;
+  }
+
+  .tagline {
+    font-size: 2.4rem;
+  }
+
+  .mottoContainer {
+    padding: 0 3rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .heroContent {
+    margin-top: 30rem;
+  }
+
+  .tagline {
+    font-size: 2.5rem;
+  }
+
+  .mottoContainer img {
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .tagline {
+    font-size: 3.2rem;
+  }
+
+  .mottoContainer {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .mottoContainer img {
+    height: 11rem;
+  }
+}
