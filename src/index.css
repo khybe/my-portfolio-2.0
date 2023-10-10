@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Define some custom CSS variables for easy reuse */
+:root {
+  --font-family-gilda: "Gilda Display", Georgia, "Times New Roman", serif; /* Define a font family for special use */
+  --font-family-inter: "Inter", "Gilda Display", Arial, sans-serif; /* Define a fallback font family with Inter as a primary choice */
+  --color-rustic-red: #9b4819; /* Define a custom color variable for rustic red */
+  --color-charcoal: #292826; /* Define a custom color variable for charcoal */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Apply a box-sizing reset to use 'border-box' by default for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set the base font size for easy rem-based calculations */
+html {
+  font-size: 62.5%; /* 1rem = 10px (10px / 16px = 62.5%) */
+}
+
+/* Apply a basic font and background color to the body */
+body {
+  font-family: var(
+    --font-family-inter
+  ); /* Use the Inter font family as the default */
+  background-color: #ffffff; /* Set the background color of the body to white */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
