@@ -1,14 +1,14 @@
-#about-me {
+#about {
   background-color: var(--color-charcoal);
   height: 700px;
   color: #fff;
 }
 
-#my-work {
+#projects {
   height: 700px;
 }
 
-#contact-me {
+#contact {
   background-color: var(--color-charcoal);
   height: 700px;
   color: #fff;

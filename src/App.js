@@ -1,19 +1,20 @@
+import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
-      <header>{/* <p> Here goes Navbar</p> */}</header>
+      <Header />
       <main>
         <Home />
-        <section id="about-me">
+        <section id="about">
           <h2>About Me</h2>
         </section>
-        <section id="my-work">
+        <section id="projects">
           <h2>My Work</h2>
         </section>
-        <section id="contact-me">
+        <section id="contact">
           <h2>Contact Me</h2>
         </section>
       </main>
