@@ -1,0 +1,128 @@
+/* Basic styles for the header and navigation (Mobile-first) */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-charcoal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img {
+  max-width: 5rem;
+  height: auto;
+}
+
+.menuButton {
+  display: block; /* Display the menu button on smaller screens */
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.menuButton.open .bar {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menuButton.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButton.open .bar:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.navLinks {
+  list-style: none;
+  display: none; /* Hide the navigation links by default on smaller screens */
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  padding-top: 2rem;
+  right: 0;
+  background-color: var(--color-charcoal);
+  width: 70%;
+  text-align: center;
+  height: 100vh;
+}
+
+.navLinks.open {
+  display: flex;
+}
+
+.navLinks li {
+  margin: 2rem;
+  margin-right: 20px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: var(--color-rustic-red);
+  text-shadow: 2px 2px 4px rgba(9, 9, 9, 0.5);
+  font-weight: 800;
+}
+
+/* Media query for larger screens (Desktop styles) */
+@media (min-width: 769px) {
+  header {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .menuButton {
+    display: none; /* Hide the menu button on larger screens */
+  }
+
+  .navLinks {
+    height: auto;
+    top: 0;
+    padding-top: 0;
+    display: flex; /* Display the navigation links by default on larger screens */
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    text-align: left;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .navLinks li {
+    margin: 0 2rem;
+    margin-right: 20px;
+  }
+}

@@ -14,14 +14,24 @@
 /* Set the base font size for easy rem-based calculations */
 html {
   font-size: 62.5%; /* 1rem = 10px (10px / 16px = 62.5%) */
+  scroll-padding-top: 5rem;
 }
 
 /* Apply a basic font and background color to the body */
 body {
+  max-width: 120rem;
+  margin: auto;
   font-family: var(
     --font-family-inter
   ); /* Use the Inter font family as the default */
   background-color: #ffffff; /* Set the background color of the body to white */
-  margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  /* padding-top: 7rem; Add padding to body to avoid content overlapping with fixed header */
+}
+
+/* Reset some default styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
