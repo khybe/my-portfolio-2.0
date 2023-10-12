@@ -18,13 +18,13 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 
 .logo img {
-  max-width: 5rem;
+  max-width: 8rem;
   height: auto;
+  margin-top: 0.5rem;
 }
 
 .menuButton {
@@ -99,6 +99,10 @@ header {
   .navbar {
     max-width: 1200px;
     margin: auto;
+  }
+
+  .logo img {
+    margin-top: -0.5rem;
   }
 
   .menuButton {
