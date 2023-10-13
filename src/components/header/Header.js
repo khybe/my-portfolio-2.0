@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+import NavLinks from "./NavLinks";
 import Backdrop from "../../UI/Backdrop";
 import logoImage from "../../assets/logo.gif";
 
@@ -9,7 +10,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
 
-  const toggleNavbarHandler = () => {
+  const HandleNavbarToggle = () => {
     if (isMobile) {
       setIsOpen((prevState) => !prevState);
     }
@@ -29,12 +30,12 @@ function Header() {
     };
   }, []);
 
-  const { navbar, logo, menuButton, bar, navLinks, open } = styles;
+  const { navbar, logo, menuButton, bar, open } = styles;
 
   return (
     <header>
       <nav className={navbar}>
-        {isMobile && isOpen && <Backdrop onClick={toggleNavbarHandler} />}
+        {isMobile && isOpen && <Backdrop onClick={HandleNavbarToggle} />}
         <div className={logo}>
           <a href="#hero">
             <img src={logoImage} alt="Khaibar Portfolio Logo" />
@@ -42,26 +43,13 @@ function Header() {
         </div>
         <button
           className={`${menuButton} ${isOpen ? open : ""}`}
-          onClick={toggleNavbarHandler}
+          onClick={HandleNavbarToggle}
         >
           <div className={bar}></div>
           <div className={bar}></div>
           <div className={bar}></div>
         </button>
-        <ul className={`${navLinks} ${isOpen ? open : ""}`}>
-          <li onClick={toggleNavbarHandler}>
-            <a href="#hero">Home</a>
-          </li>
-          <li onClick={toggleNavbarHandler}>
-            <a href="#about">About</a>
-          </li>
-          <li onClick={toggleNavbarHandler}>
-            <a href="#projects">Projects</a>
-          </li>
-          <li onClick={toggleNavbarHandler}>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+        <NavLinks isOpen={isOpen} onClick={HandleNavbarToggle} />
       </nav>
     </header>
   );

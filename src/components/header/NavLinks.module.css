@@ -1,0 +1,60 @@
+.navLinks {
+  list-style: none;
+  display: none; /* Hide the navigation links by default on smaller screens */
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  padding-top: 2rem;
+  right: 0;
+  background-color: var(--color-charcoal);
+  width: 70%;
+  text-align: center;
+  height: 100vh;
+}
+
+.navLinks.open {
+  display: flex;
+}
+
+.navLinks li {
+  margin: 2rem;
+  margin-right: 20px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: var(--color-rustic-red);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+}
+
+/* Media query for larger screens (Desktop styles) */
+@media (min-width: 769px) {
+  .navLinks {
+    height: auto;
+    top: 0;
+    padding-top: 0;
+    display: flex; /* Display the navigation links by default on larger screens */
+    align-items: center;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    text-align: left;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .navLinks li {
+    margin: 0 2rem;
+    margin-right: 20px;
+  }
+}
