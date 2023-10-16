@@ -2,18 +2,20 @@
   list-style: none;
   display: none; /* Hide the navigation links by default on smaller screens */
   flex-direction: column;
+  justify-content: center;
   position: absolute;
   top: 4.5rem;
-  padding-top: 2rem;
   right: 0;
   background-color: var(--color-charcoal);
   width: 70%;
   text-align: center;
-  height: 100vh;
+  border-radius: 8px;
+  height: 65vh;
 }
 
 .navLinks.open {
   display: flex;
+  min-height: 26rem;
 }
 
 .navLinks li {
