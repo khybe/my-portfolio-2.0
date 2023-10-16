@@ -1,15 +1,13 @@
-#about {
-  background-color: var(--color-charcoal);
-  height: 700px;
-  color: #fff;
-}
-
 #projects {
   height: 700px;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 #contact {
   background-color: var(--color-charcoal);
   height: 700px;
   color: #fff;
+  text-align: center;
+  padding-top: 2rem;
 }

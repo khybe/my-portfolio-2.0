@@ -1,0 +1,35 @@
+.skillsContainer {
+  padding-left: 4%;
+}
+
+.skillsContainer li {
+  padding-left: 0.5rem;
+  padding-bottom: 0.4rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.skillsContainer span {
+  margin-left: 1rem;
+}
+
+@media (min-width: 350px) {
+  .skillsContainer li {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .skillsContainer {
+    display: flex;
+    gap: 5rem;
+    padding-bottom: 2rem;
+    border: 0.1px solid rgb(82, 78, 78);
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .skillsContainer {
+    gap: 8rem;
+  }
+}

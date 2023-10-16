@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
+import AboutMe from "./components/about-me/AboutMe";
 import "./App.css";
 
 function App() {
@@ -8,14 +9,12 @@ function App() {
       <Header />
       <main>
         <Home />
-        <section id="about">
-          <h2>About Me</h2>
-        </section>
+        <AboutMe />
         <section id="projects">
-          <h2>My Work</h2>
+          <h2>MY WORK</h2>
         </section>
         <section id="contact">
-          <h2>Contact Me</h2>
+          <h2>CONTACT ME</h2>
         </section>
       </main>
     </div>

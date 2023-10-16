@@ -1,0 +1,153 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-charcoal);
+  color: #fff;
+  padding: 4rem 1rem;
+  font-size: 1.6rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-profile {
+  min-width: 45%;
+  text-align: center;
+}
+
+.about-profile-image {
+  border: 0.1px solid rgb(82, 78, 78);
+  width: 75%;
+  max-width: 30rem;
+  border-radius: 48% 48% 0 0;
+}
+
+.about-profile .name {
+  font-size: 2.6rem;
+}
+
+.about-profile .profession {
+  font-size: 1.4rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resume-button,
+.email-button {
+  padding: 6px 12px;
+  width: 75%;
+  max-width: 25rem;
+  margin: auto;
+  background-color: #ede8e8;
+  color: #030303;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.resume-button:hover,
+.email-button:hover {
+  background-color: #1a1a1a; /* Change background color on hover */
+  color: #ede8e8; /* Change text color on hover */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+  border: 2px solid var(--color-rustic-red);
+}
+
+.resume-button:active,
+.email-button:active {
+  color: var(--color-rustic-red); /* Change text color on active */
+  border: 3px solid var(--color-rustic-red);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.github-link,
+.linkedin-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.github-link:hover,
+.linkedin-link:hover {
+  transform: scale(1.2); /* Add a slight scale effect on hover */
+  border-bottom: 2px solid var(--color-rustic-red);
+}
+
+.about-description {
+  letter-spacing: 0.5px;
+}
+
+.about-title {
+  margin-left: 1.5rem;
+}
+
+.about-description p {
+  border: 0.1px solid rgb(82, 78, 78);
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@media (min-width: 500px) {
+  .about-description {
+    padding: 0 2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .about-profile .name {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 850px) {
+  #about {
+    border-radius: 4px;
+  }
+
+  .about-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-profile {
+    padding-top: 4rem;
+  }
+
+  .about-profile .profession {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-profile .name {
+    letter-spacing: 0.8px;
+  }
+
+  .about-description {
+    padding-right: 3rem;
+  }
+
+  .about-description p {
+    font-size: 1.8rem;
+  }
+
+  .github-link,
+  .linkedin-link {
+    font-size: 3.5rem;
+  }
+}
