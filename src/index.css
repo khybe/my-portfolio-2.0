@@ -35,3 +35,19 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-family: var(--font-family-gilda);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
