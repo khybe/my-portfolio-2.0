@@ -38,6 +38,9 @@ const MySkills = () => {
           <li>
             ⎼ <span>Git & GitHub</span>
           </li>
+          <li>
+            ⎼ <span>Documentation</span>
+          </li>
         </ul>
       </div>
       <div className={familiarSkills}>
@@ -54,6 +57,9 @@ const MySkills = () => {
           </li>
           <li>
             ⎼ <span>TypeScript</span>
+          </li>
+          <li>
+            ⎼ <span>Unit Test</span>
           </li>
         </ul>
       </div>
