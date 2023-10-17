@@ -1,0 +1,110 @@
+.aboutProfile {
+  min-width: 45%;
+  text-align: center;
+}
+
+.aboutProfileImage {
+  border: 0.1px solid rgb(82, 78, 78);
+  width: 75%;
+  max-width: 30rem;
+  border-radius: 48% 48% 0 0;
+}
+
+.aboutProfile .name {
+  font-size: 2.6rem;
+}
+
+.aboutProfile .profession {
+  font-size: 1.4rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resumeButton,
+.emailButton {
+  padding: 6px 12px;
+  width: 75%;
+  max-width: 25rem;
+  margin: auto;
+  background-color: #ede8e8;
+  color: #030303;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.resumeButton:hover,
+.emailButton:hover {
+  background-color: #1a1a1a; /* Change background color on hover */
+  color: #ede8e8; /* Change text color on hover */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+  border: 2px solid var(--color-rustic-red);
+}
+
+.resumeButton:active,
+.emailButton:active {
+  color: var(--color-rustic-red); /* Change text color on active */
+  border: 3px solid var(--color-rustic-red);
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.githubLink,
+.linkedinLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.githubLink:hover,
+.linkedinLink:hover {
+  transform: scale(1.2); /* Add a slight scale effect on hover */
+  border-bottom: 2px solid var(--color-rustic-red);
+}
+
+@media (min-width: 500px) {
+  .aboutProfile .name {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .aboutProfile {
+    min-width: 42%;
+    padding-top: 4rem;
+  }
+
+  .aboutProfileImage {
+    width: 80%;
+  }
+
+  .aboutProfile .profession {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .aboutProfile {
+    min-width: 40%;
+  }
+
+  .aboutProfile .name {
+    letter-spacing: 0.8px;
+  }
+
+  .githubLink,
+  .linkedinLink {
+    font-size: 3.5rem;
+  }
+}

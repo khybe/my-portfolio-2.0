@@ -1,0 +1,31 @@
+.aboutDescription {
+  letter-spacing: 0.5px;
+}
+
+.aboutTitle {
+  margin-left: 1.5rem;
+}
+
+.aboutDescription p {
+  border: 0.1px solid rgb(82, 78, 78);
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@media (min-width: 500px) {
+  .aboutDescription {
+    padding: 0 2rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .aboutDescription {
+    padding-right: 3rem;
+  }
+
+  .aboutDescription p {
+    font-size: 1.8rem;
+  }
+}
