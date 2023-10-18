@@ -1,0 +1,5 @@
+/* Apply a masonry layout */
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+}
