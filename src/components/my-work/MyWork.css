@@ -1,0 +1,108 @@
+/* MyWork.css */
+#projects {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* Apply a masonry layout */
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Define styles for each project item */
+.project-item {
+  flex: 1;
+  margin: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.project-item h3 {
+  font-size: 1.8rem;
+  color: var(--color-charcoal);
+}
+
+/* Style the image and button */
+.project-item img {
+  border-radius: 4px;
+  width: 100%;
+  max-width: 34rem;
+  cursor: pointer;
+}
+
+.project-item img:hover {
+  border: 3px solid var(--color-rustic-red);
+  border-radius: 4px;
+}
+
+.details-button {
+  padding: 4px 8px;
+  width: 14rem;
+  margin: 2rem auto;
+  background-color: var(--color-charcoal);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #212020;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+  border: 2px solid var(--color-rustic-red);
+  font-weight: 600;
+}
+
+.details-button:active {
+  color: var(--color-rustic-red); /* Change text color on active */
+  border: 3px solid var(--color-rustic-red);
+}
+
+.show-more-button {
+  font-size: 1.4rem;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.show-more-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.scroll-down-icon {
+  font-size: 1.8rem;
+}
+
+.show-more-button:hover {
+  font-size: 1.6rem;
+}
+
+.scroll-down-icon:hover {
+  font-size: 2rem;
+}
+
+/* Additional styles as needed */
+
+/* Set the number of columns at different screen sizes */
+@media screen and (max-width: 767px) {
+  .project-item {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .project-item {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-item {
+    flex-basis: calc(33.33% - 20px);
+  }
+}
