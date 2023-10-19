@@ -26,33 +26,6 @@
   gap: 2rem;
 }
 
-.resumeButton,
-.emailButton {
-  padding: 6px 12px;
-  width: 75%;
-  max-width: 25rem;
-  margin: auto;
-  background-color: #ede8e8;
-  color: #030303;
-  text-decoration: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.resumeButton:hover,
-.emailButton:hover {
-  background-color: #1a1a1a; /* Change background color on hover */
-  color: #ede8e8; /* Change text color on hover */
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
-  border: 2px solid var(--color-rustic-red);
-}
-
-.resumeButton:active,
-.emailButton:active {
-  color: var(--color-rustic-red); /* Change text color on active */
-  border: 3px solid var(--color-rustic-red);
-}
-
 .socialIcons {
   display: flex;
   justify-content: center;
