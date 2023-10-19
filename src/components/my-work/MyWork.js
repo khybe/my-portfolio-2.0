@@ -54,6 +54,7 @@ const MyWork = () => {
         <DetailModal
           project={selectedProject}
           onCloseModal={closeModalHandler}
+          onOpenModal={openModalHandler}
         />
       )}
     </section>

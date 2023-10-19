@@ -1,4 +1,3 @@
-// ProjectDetailModal.js
 import React from "react";
 import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
@@ -6,15 +5,23 @@ import LinkButton from "../../../UI/LinkButton";
 import Backdrop from "../../../UI/Backdrop"; // Assuming Backdrop is in the same directory
 import styles from "./DetailModal.module.css";
 
-const DetailModal = ({ project, onCloseModal }) => {
+const DetailModal = ({ project, onCloseModal, onOpenModal }) => {
   const closeModalHandler = () => {
     onCloseModal();
+  };
+
+  const modalStyles = {
+    transform: onOpenModal ? "translate(-50%, -50%)" : "translate(-50%, -150%)",
+    opacity: onOpenModal ? 1 : 0,
   };
 
   return ReactDOM.createPortal(
     <>
       <Backdrop onClick={closeModalHandler} />
-      <div className={styles.modal}>
+      <div
+        className={`${styles.modal} ${onOpenModal ? styles.active : ""}`}
+        style={modalStyles}
+      >
         <div className={styles["detail-content"]}>
           <AiOutlineClose
             onClick={closeModalHandler}

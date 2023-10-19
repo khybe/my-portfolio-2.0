@@ -2,16 +2,21 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   background: white;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  max-width: 45rem;
   width: 100%;
+  max-width: 45rem;
   z-index: 1000;
-  overflow-y: auto; /* Enable scrolling if content is too long */
-  transition: transform 0.3s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal.active {
+  transform: scaleY(1);
 }
 
 .detail-content {
