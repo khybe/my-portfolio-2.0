@@ -12,15 +12,6 @@
   z-index: 1000;
   overflow-y: auto; /* Enable scrolling if content is too long */
   transition: transform 0.3s ease-in-out;
-  font-size: 1.6rem;
-}
-
-.modal.open {
-  /* transform: translate(-50%, -50%); */
-}
-
-.modal.closed {
-  /* transform: translate(-50%, -150%); Move the modal off the screen */
 }
 
 .detail-content {
@@ -30,6 +21,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
 }
 
 .detail-content__close-icon {
@@ -58,18 +50,16 @@
 .detail-content__actions {
   display: flex;
   gap: 1rem;
-  margin-top: 20px;
-  text-align: center;
 }
 
 .detail-content__button {
   padding: 4px 8px;
-  width: 14rem;
-  margin: 2rem auto;
+  width: 16rem;
   background-color: var(--color-charcoal);
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
 
 .detail-content__button:hover {
@@ -94,9 +84,29 @@
   }
 
   .detail-content p {
-    padding: 2rem;
+    padding: 1.5rem;
     line-height: 2.5rem;
+  }
+
+  .detail-content__actions {
+    font-size: 1.6rem;
   }
 }
 
-/* Add more styling for other elements as needed */
+@media screen and (min-width: 899px) {
+  .modal {
+    max-width: 55rem;
+  }
+
+  .modal h2 {
+    font-size: 2.6rem;
+  }
+
+  .detail-content {
+    font-size: 2rem;
+  }
+
+  .detail-content__actions {
+    font-size: 1.8rem;
+  }
+}
