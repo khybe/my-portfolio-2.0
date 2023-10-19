@@ -24,6 +24,7 @@
 .project-item img:hover {
   border: 3px solid var(--color-rustic-red);
   border-radius: 4px;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.8); /* Add a subtle box shadow on hover */
 }
 
 .details-button {
@@ -38,7 +39,7 @@
 
 .details-button:hover {
   background-color: #212020;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.8); /* Add a subtle box shadow on hover */
   border: 2px solid var(--color-rustic-red);
   font-weight: 600;
 }

@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import { projectsData } from "./components/projectsData";
+
 import ProjectList from "./components/ProjectList";
+import DetailModal from "./components/DetailModal";
 import "./MyWork.css";
 
 const MyWork = () => {
   const [showMore, setShowMore] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const handleResize = () => {
     setShowMore(false);
@@ -17,10 +21,22 @@ const MyWork = () => {
     };
   }, []);
 
+  const openModalHandler = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModalHandler = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <section id="projects">
       <h2>MY WORK</h2>
-      <ProjectList showMore={showMore} />
+      <ProjectList
+        showMore={showMore}
+        onOpenModal={openModalHandler}
+        projectsData={projectsData}
+      />
       <button
         className="show-more-button"
         onClick={() => setShowMore(!showMore)}
@@ -34,6 +50,12 @@ const MyWork = () => {
           <AiOutlineDown className="scroll-down-icon" />
         )}
       </button>
+      {selectedProject && (
+        <DetailModal
+          project={selectedProject}
+          onCloseModal={closeModalHandler}
+        />
+      )}
     </section>
   );
 };

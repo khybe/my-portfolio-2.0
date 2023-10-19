@@ -1,9 +1,8 @@
 import React from "react";
 import Project from "./Project";
-import { projectsData } from "./projectsData";
 import styles from "./ProjectList.module.css";
 
-const ProjectList = ({ showMore }) => {
+const ProjectList = ({ projectsData, showMore, onOpenModal }) => {
   const getProjectsToDisplay = () => {
     if (window.innerWidth <= 768) {
       return showMore ? projectsData : projectsData.slice(0, 3);
@@ -17,7 +16,7 @@ const ProjectList = ({ showMore }) => {
   return (
     <div className={styles.masonry}>
       {getProjectsToDisplay().map((project, index) => (
-        <Project key={index} project={project} />
+        <Project key={index} project={project} onOpenModal={onOpenModal} />
       ))}
     </div>
   );

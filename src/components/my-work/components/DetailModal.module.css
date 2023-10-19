@@ -1,0 +1,102 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 45rem;
+  width: 100%;
+  z-index: 1000;
+  overflow-y: auto; /* Enable scrolling if content is too long */
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.6rem;
+}
+
+.modal.open {
+  /* transform: translate(-50%, -50%); */
+}
+
+.modal.closed {
+  /* transform: translate(-50%, -150%); Move the modal off the screen */
+}
+
+.detail-content {
+  position: relative;
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.detail-content__close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+/* Style for the modal title */
+.detail-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+}
+
+/* Style for the modal description */
+.detail-content p {
+  line-height: 2.3rem;
+  padding: 1rem 0;
+  border-top: 0.5px solid #807575;
+  border-bottom: 0.5px solid #807575;
+}
+
+/* Style for the links container */
+.detail-content__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.detail-content__button {
+  padding: 4px 8px;
+  width: 14rem;
+  margin: 2rem auto;
+  background-color: var(--color-charcoal);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.detail-content__button:hover {
+  background-color: #212020;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.8); /* Add a subtle box shadow on hover */
+  border: 2px solid var(--color-rustic-red);
+  font-weight: 600;
+}
+
+.detail-content__button:active {
+  color: var(--color-rustic-red); /* Change text color on active */
+  border: 3px solid var(--color-rustic-red);
+}
+
+@media screen and (min-width: 599px) {
+  .modal {
+    max-width: 50rem;
+  }
+
+  .detail-content {
+    font-size: 1.8rem;
+  }
+
+  .detail-content p {
+    padding: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Add more styling for other elements as needed */
