@@ -1,7 +1,7 @@
 import React from "react";
 
-import AboutProfile from "./AboutProfile";
-import AboutDescription from "./AboutDescription";
+import AboutProfile from "./components/AboutProfile";
+import AboutDescription from "./components/AboutDescription";
 import "./AboutMe.css";
 
 function AboutMe() {

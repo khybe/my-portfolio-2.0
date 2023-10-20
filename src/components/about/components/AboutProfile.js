@@ -1,6 +1,6 @@
-import profileImage from "../../assets/profileImage.png";
+import profileImage from "../../../assets/profileImage.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import LinkButton from "../../UI/LinkButton";
+import LinkButton from "../../../UI/LinkButton";
 import styles from "./AboutProfile.module.css";
 
 const AboutProfile = () => {
