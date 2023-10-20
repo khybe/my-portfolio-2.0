@@ -1,6 +1,6 @@
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
-import AboutMe from "./components/about-me/AboutMe";
+import AboutMe from "./components/about/AboutMe";
 import MyWork from "./components/my-work/MyWork";
 import "./App.css";
 
