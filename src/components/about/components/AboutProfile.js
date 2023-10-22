@@ -1,6 +1,6 @@
 import profileImage from "../../../assets/profileImage.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import LinkButton from "../../../UI/LinkButton";
+import Button from "../../../UI/Button";
 import styles from "./AboutProfile.module.css";
 
 const AboutProfile = () => {
@@ -25,10 +25,10 @@ const AboutProfile = () => {
       <h2 className={name}>Khaibar Saadat</h2>
       <h3 className={profession}>Front-End Developer</h3>
       <div className={buttons}>
-        <LinkButton href="https://drive.google.com/file/d/1vVOhrLF7ZmOfJQXGgbakIfpsflboVmpf/view?usp=sharing">
+        <Button href="https://drive.google.com/file/d/1vVOhrLF7ZmOfJQXGgbakIfpsflboVmpf/view?usp=sharing">
           Resume
-        </LinkButton>
-        <LinkButton href="mailto:saadat.khaibar@gmail.com">Email</LinkButton>
+        </Button>
+        <Button href="mailto:saadat.khaibar@gmail.com">Email</Button>
       </div>
       <div className={socialIcons}>
         <a

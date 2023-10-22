@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
-import LinkButton from "../../../UI/LinkButton";
+import Button from "../../../UI/Button";
 import Backdrop from "../../../UI/Backdrop"; // Assuming Backdrop is in the same directory
 import styles from "./DetailModal.module.css";
 
@@ -32,20 +32,20 @@ const DetailModal = ({ project, onCloseModal, onOpenModal }) => {
           <p>{project.description}</p>
           <footer className={styles["detail-content__actions"]}>
             {project.projectLink && (
-              <LinkButton
+              <Button
                 className={styles["detail-content__button"]}
                 href={project.projectLink}
               >
                 Website
-              </LinkButton>
+              </Button>
             )}
             {project.githubLink && (
-              <LinkButton
+              <Button
                 className={styles["detail-content__button"]}
                 href={project.githubLink}
               >
                 Github
-              </LinkButton>
+              </Button>
             )}
           </footer>
         </div>
