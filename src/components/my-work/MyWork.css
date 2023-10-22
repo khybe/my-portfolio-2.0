@@ -10,6 +10,7 @@
   border: none;
   margin-bottom: 0.5rem;
   cursor: pointer;
+  color: var(--color-charcoal);
 }
 
 .show-more-label {

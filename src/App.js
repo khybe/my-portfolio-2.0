@@ -2,6 +2,7 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import AboutMe from "./components/about/AboutMe";
 import MyWork from "./components/my-work/MyWork";
+import ContactMe from "./components/contact/ContactMe";
 import "./App.css";
 
 function App() {
@@ -12,10 +13,9 @@ function App() {
         <Home />
         <AboutMe />
         <MyWork />
-        <section id="contact">
-          <h2>CONTACT ME</h2>
-        </section>
+        <ContactMe />
       </main>
+      <footer className="footer"></footer>
     </div>
   );
 }
