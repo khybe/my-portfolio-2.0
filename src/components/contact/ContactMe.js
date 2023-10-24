@@ -1,13 +1,9 @@
-import { useState } from "react";
 import ContactInfo from "./components/ContactInfo";
-import Input from "./components/Input";
-import Button from "../../UI/Button";
+import Form from "./components/Form";
 import useInput from "../../hooks/use-input";
 import "./ContactMe.css";
 
 const ContactMe = () => {
-  const [formIsSubmitted, setFormIsSubmitted] = useState(false);
-
   const {
     value: enteredName,
     isValid: enteredNameIsValid,
@@ -61,31 +57,27 @@ const ContactMe = () => {
     formIsValid = true;
   }
 
-  const submitHandler = (event) => {
-    event.preventDefault();
-
-    if (!formIsValid) {
-      return;
-    } else {
+  const onFormSubmit = () => {
+    if (formIsValid) {
       console.log("Submitted!");
-      console.log(
-        enteredName,
-        enteredEmail,
-        enteredPhone,
-        enteredAddress,
-        enteredSubject,
-        enteredMessage
-      );
-
-      setFormIsSubmitted(true);
-
-      resetNameInput();
-      resetEmailInput();
-      resetPhoneInput();
-      resetAddressInput();
-      resetSubjectInput();
-      resetMessageInput();
+      console.log({
+        name: enteredName,
+        email: enteredEmail,
+        phone: enteredPhone,
+        address: enteredAddress,
+        subject: enteredSubject,
+        message: enteredMessage,
+      });
     }
+  };
+
+  const resetForm = () => {
+    resetNameInput();
+    resetEmailInput();
+    resetPhoneInput();
+    resetAddressInput();
+    resetSubjectInput();
+    resetMessageInput();
   };
 
   const nameInputConfig = {
@@ -93,107 +85,79 @@ const ContactMe = () => {
     label: "Name",
     type: "text",
     isRequired: true,
+    value: enteredName,
+    onChange: nameInputChangeHandler,
+    onBlur: nameInputBlurHandler,
+    hasError: enteredNameIsInvalid,
+    errorText: "Name input can not be empty.",
+    placeholder: "Enter your name",
   };
-
   const emailInputConfig = {
     id: "email",
     label: "Email",
     type: "text",
     isRequired: true,
+    value: enteredEmail,
+    onChange: emailInputChangeHandler,
+    onBlur: emailInputBlurHandler,
+    hasError: enteredEmailIsInvalid,
+    errorText: "Please enter a valid email.",
+    placeholder: "Enter your email",
   };
-
   const phoneInputConfig = {
     id: "phone",
     label: "Phone",
     type: "tel",
-    isRequired: false, // Not required
+    isRequired: false,
+    value: enteredPhone,
+    onChange: phoneInputChangeHandler,
+    placeholder: "Enter your phone number",
   };
-
   const addressInputConfig = {
     id: "address",
     label: "Address",
     type: "text",
-    isRequired: false, // Not required
+    isRequired: false,
+    value: enteredAddress,
+    onChange: addressInputChangeHandler,
+    placeholder: "Enter your address",
   };
-
   const subjectInputConfig = {
     id: "subject",
     label: "Subject",
     type: "text",
-    isRequired: false, // Not required
+    isRequired: false,
+    value: enteredSubject,
+    onChange: subjectInputChangeHandler,
+    placeholder: "Type your subject",
   };
-
   const messageInputConfig = {
     id: "message",
     label: "Message",
     type: "textarea",
     isRequired: true,
+    value: enteredMessage,
+    onChange: messageInputChangeHandler,
+    onBlur: MessageInputBlurHandler,
+    hasError: enteredMessageIsInvalid,
+    errorText: "Message must be at least 50 characters.",
+    placeholder: "Type your message here...",
   };
 
   return (
     <section id="contact">
       <ContactInfo />
-      <form onSubmit={submitHandler}>
-        <div className="control-group">
-          <Input
-            {...nameInputConfig}
-            value={enteredName}
-            onChange={nameInputChangeHandler}
-            onBlur={nameInputBlurHandler}
-            hasError={enteredNameIsInvalid}
-            errorText="Name input can not be empty."
-            placeholder="Enter your name"
-          />
-          <Input
-            {...emailInputConfig}
-            value={enteredEmail}
-            onChange={emailInputChangeHandler}
-            onBlur={emailInputBlurHandler}
-            hasError={enteredEmailIsInvalid}
-            errorText="Please enter a valid email."
-            placeholder="Enter your email"
-          />
-        </div>
-        <div className="control-group">
-          <Input
-            {...phoneInputConfig}
-            value={enteredPhone}
-            onChange={phoneInputChangeHandler}
-            placeholder="Enter your phone number"
-          />
-          <Input
-            {...addressInputConfig}
-            value={enteredAddress}
-            onChange={addressInputChangeHandler}
-            placeholder="Enter your address"
-          />
-        </div>
-        <Input
-          {...subjectInputConfig}
-          value={enteredSubject}
-          onChange={subjectInputChangeHandler}
-          placeholder="Type your subject"
-        />
-        <Input
-          {...messageInputConfig}
-          value={enteredMessage}
-          onChange={messageInputChangeHandler}
-          onBlur={MessageInputBlurHandler}
-          hasError={enteredMessageIsInvalid}
-          errorText="Message has to be at least 50 characters."
-          placeholder="Type your message here..."
-        />
-        <div className="form-actions">
-          <Button className="form-button" disabled={!formIsValid}>
-            Submit
-          </Button>
-        </div>
-        {formIsSubmitted && (
-          <div className="submission-confirmation">
-            <p>Thanks for submitting!</p>
-          </div>
-        )}
-      </form>
+      <Form
+        formIsValid={formIsValid}
+        onFormSubmit={onFormSubmit}
+        nameInputConfig={nameInputConfig}
+        emailInputConfig={emailInputConfig}
+        phoneInputConfig={phoneInputConfig}
+        addressInputConfig={addressInputConfig}
+        subjectInputConfig={subjectInputConfig}
+        messageInputConfig={messageInputConfig}
+        resetForm={resetForm}
+      />
     </section>
   );
 };
