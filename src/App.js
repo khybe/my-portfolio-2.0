@@ -3,11 +3,11 @@ import Home from "./components/home/Home";
 import AboutMe from "./components/about/AboutMe";
 import MyWork from "./components/my-work/MyWork";
 import ContactMe from "./components/contact/ContactMe";
-import "./App.css";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="app">
+    <div>
       <Header />
       <main>
         <Home />
@@ -15,7 +15,7 @@ function App() {
         <MyWork />
         <ContactMe />
       </main>
-      <footer className="footer"></footer>
+      <Footer />
     </div>
   );
 }

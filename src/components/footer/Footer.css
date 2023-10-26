@@ -1,0 +1,41 @@
+/* Style the footer */
+.footer {
+  background-color: white;
+  color: #000;
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+/* Style footer elements */
+.footer-element {
+  margin: 1rem;
+}
+
+.footer-element a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Style the social links horizontally */
+.social-links a {
+  font-size: 2.2rem;
+}
+
+/* Style the copyright text */
+.copyright {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 549px) {
+  .footer {
+    font-size: 1.5rem;
+  }
+  .copyright {
+    font-size: 1.4rem;
+  }
+}
