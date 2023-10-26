@@ -1,9 +1,14 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import ContactInfo from "./components/ContactInfo";
 import Form from "./components/Form";
 import useInput from "../../hooks/use-input";
 import "./ContactMe.css";
 
 const ContactMe = () => {
+  const form = useRef();
+
   const {
     value: enteredName,
     isValid: enteredNameIsValid,
@@ -57,17 +62,33 @@ const ContactMe = () => {
     formIsValid = true;
   }
 
-  const onFormSubmit = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
     if (formIsValid) {
-      console.log("Submitted!");
-      console.log({
-        name: enteredName,
-        email: enteredEmail,
-        phone: enteredPhone,
-        address: enteredAddress,
-        subject: enteredSubject,
-        message: enteredMessage,
-      });
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICE_KEY,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_KEY,
+          form.current,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log({
+              name: enteredName,
+              email: enteredEmail,
+              phone: enteredPhone,
+              address: enteredAddress,
+              subject: enteredSubject,
+              message: enteredMessage,
+            });
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   };
 
@@ -81,6 +102,7 @@ const ContactMe = () => {
   };
 
   const nameInputConfig = {
+    name: "user_name",
     id: "name",
     label: "Name",
     type: "text",
@@ -93,6 +115,7 @@ const ContactMe = () => {
     placeholder: "Enter your name",
   };
   const emailInputConfig = {
+    name: "user_email",
     id: "email",
     label: "Email",
     type: "text",
@@ -105,6 +128,7 @@ const ContactMe = () => {
     placeholder: "Enter your email",
   };
   const phoneInputConfig = {
+    name: "user_phone",
     id: "phone",
     label: "Phone",
     type: "tel",
@@ -114,6 +138,7 @@ const ContactMe = () => {
     placeholder: "Enter your phone number",
   };
   const addressInputConfig = {
+    name: "user_address",
     id: "address",
     label: "Address",
     type: "text",
@@ -123,6 +148,7 @@ const ContactMe = () => {
     placeholder: "Enter your address",
   };
   const subjectInputConfig = {
+    name: "user_subject",
     id: "subject",
     label: "Subject",
     type: "text",
@@ -132,6 +158,7 @@ const ContactMe = () => {
     placeholder: "Type your subject",
   };
   const messageInputConfig = {
+    name: "user_message",
     id: "message",
     label: "Message",
     type: "textarea",
@@ -149,7 +176,6 @@ const ContactMe = () => {
       <ContactInfo />
       <Form
         formIsValid={formIsValid}
-        onFormSubmit={onFormSubmit}
         nameInputConfig={nameInputConfig}
         emailInputConfig={emailInputConfig}
         phoneInputConfig={phoneInputConfig}
@@ -157,6 +183,8 @@ const ContactMe = () => {
         subjectInputConfig={subjectInputConfig}
         messageInputConfig={messageInputConfig}
         resetForm={resetForm}
+        onSubmit={sendEmail}
+        formRef={form}
       />
     </section>
   );

@@ -6,7 +6,7 @@ import "./Form.css";
 const Form = (props) => {
   const {
     formIsValid,
-    onFormSubmit,
+    onSubmit,
     resetForm,
     nameInputConfig,
     emailInputConfig,
@@ -14,20 +14,23 @@ const Form = (props) => {
     addressInputConfig,
     subjectInputConfig,
     messageInputConfig,
+    formRef,
   } = props;
 
   const [formIsSubmitted, setFormIsSubmitted] = useState(false);
 
   const submitHandler = (event) => {
     event.preventDefault();
-    onFormSubmit();
+    if (onSubmit) {
+      onSubmit(event);
+    }
 
     setFormIsSubmitted(true);
     resetForm();
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form ref={formRef} onSubmit={submitHandler}>
       <div className="control-group">
         <Input {...nameInputConfig} />
         <Input {...emailInputConfig} />

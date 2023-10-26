@@ -14,6 +14,7 @@ const Input = (props) => {
     placeholder,
     errorText,
     isRequired,
+    name,
   } = props;
 
   const inputClasses = hasError ? "form-control invalid" : "form-control";
@@ -25,6 +26,7 @@ const Input = (props) => {
       <div className={inputClasses}>
         <label htmlFor={id}>{conditionalLabel}</label>
         <textarea
+          name={name}
           id={id}
           value={value}
           onChange={onChange}
@@ -40,6 +42,7 @@ const Input = (props) => {
     <div className={inputClasses}>
       <label htmlFor={id}>{conditionalLabel}</label>
       <input
+        name={name}
         type={type}
         id={id}
         value={value}
