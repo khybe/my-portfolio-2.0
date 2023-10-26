@@ -4,6 +4,11 @@
   --font-family-inter: "Inter", "Gilda Display", Arial, sans-serif; /* Define a fallback font family with Inter as a primary choice */
   --color-rustic-red: #9b4819; /* Define a custom color variable for rustic red */
   --color-charcoal: #292826; /* Define a custom color variable for charcoal */
+  --scrollbar-width: 1rem; /* Define the scrollbar width */
+  --scrollbar-thumb-color: var(
+    --color-charcoal
+  ); /* Define the scrollbar thumb color */
+  --scrollbar-track-color: #f0f0f0; /* Define the scrollbar track color */
 }
 
 /* Apply a box-sizing reset to use 'border-box' by default for all elements */
@@ -44,6 +49,21 @@ h2 {
 h2,
 h3 {
   font-family: var(--font-family-gilda);
+}
+
+/* Customize the scrollbar */
+body::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-bottom-left-radius: var(--scrollbar-width);
+  border-bottom-right-radius: var(--scrollbar-width);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
 }
 
 @media (min-width: 768px) {
