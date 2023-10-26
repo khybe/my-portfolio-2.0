@@ -61,6 +61,10 @@ header {
     height: 6rem;
   }
 
+  .logo img {
+    max-width: 5rem;
+  }
+
   .menuButton {
     display: none; /* Hide the menu button on larger screens */
   }
