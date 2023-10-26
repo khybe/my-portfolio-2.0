@@ -1,0 +1,26 @@
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.githubLink,
+.linkedinLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.githubLink:hover,
+.linkedinLink:hover {
+  transform: scale(1.2); /* Add a slight scale effect on hover */
+  border-bottom: 2px solid var(--color-rustic-red);
+}
+
+@media (min-width: 1150px) {
+  .githubLink,
+  .linkedinLink {
+    font-size: 3.5rem;
+  }
+}

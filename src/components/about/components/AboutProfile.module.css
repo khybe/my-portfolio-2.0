@@ -26,25 +26,25 @@
   gap: 2rem;
 }
 
-.socialIcons {
+/* .socialIcons {
   display: flex;
   justify-content: center;
   gap: 4rem;
   margin-top: 3rem;
-}
+} */
 
-.githubLink,
+/* .githubLink,
 .linkedinLink {
   text-decoration: none;
   color: #fff;
   font-size: 3rem;
-}
+} */
 
-.githubLink:hover,
+/* .githubLink:hover,
 .linkedinLink:hover {
-  transform: scale(1.2); /* Add a slight scale effect on hover */
+  transform: scale(1.2); 
   border-bottom: 2px solid var(--color-rustic-red);
-}
+} */
 
 @media (min-width: 500px) {
   .aboutProfile .name {
@@ -76,8 +76,8 @@
     letter-spacing: 0.8px;
   }
 
-  .githubLink,
+  /* .githubLink,
   .linkedinLink {
     font-size: 3.5rem;
-  }
+  } */
 }

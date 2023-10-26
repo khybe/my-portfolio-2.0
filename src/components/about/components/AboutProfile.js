@@ -1,19 +1,11 @@
 import profileImage from "../../../assets/profileImage.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../../../UI/Button";
+import SocialLinks from "../../../UI/SocialLinks";
 import styles from "./AboutProfile.module.css";
 
 const AboutProfile = () => {
-  const {
-    aboutProfile,
-    aboutProfileImage,
-    name,
-    profession,
-    buttons,
-    socialIcons,
-    githubLink,
-    linkedinLink,
-  } = styles;
+  const { aboutProfile, aboutProfileImage, name, profession, buttons } = styles;
 
   return (
     <div className={aboutProfile}>
@@ -30,24 +22,7 @@ const AboutProfile = () => {
         </Button>
         <Button href="mailto:saadat.khaibar@gmail.com">Email</Button>
       </div>
-      <div className={socialIcons}>
-        <a
-          href="https://github.com/khybe"
-          target="_blank"
-          rel="noreferrer"
-          className={githubLink}
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/khaibar-saadat-6a3858208/"
-          target="_blank"
-          rel="noreferrer"
-          className={linkedinLink}
-        >
-          <FaLinkedin />
-        </a>
-      </div>
+      <SocialLinks />
     </div>
   );
 };
