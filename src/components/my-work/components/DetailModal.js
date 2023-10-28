@@ -29,7 +29,19 @@ const DetailModal = ({ project, onCloseModal, onOpenModal }) => {
             size="2.5rem"
           />
           <h2>{project.title}</h2>
-          <p>{project.description}</p>
+          <div className={styles["detail-description"]}>
+            <p>{project.description}</p>
+          </div>
+          <div className={styles["detail-toolSet"]}>
+            <h5>Built With :</h5>
+            {project.toolSet && (
+              <ul>
+                {project.toolSet.map((tool) => (
+                  <li>- {tool}</li>
+                ))}
+              </ul>
+            )}
+          </div>
           <footer className={styles["detail-content__actions"]}>
             {project.projectLink && (
               <Button

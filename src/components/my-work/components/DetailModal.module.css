@@ -2,13 +2,13 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   background: white;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 45rem;
+  max-width: 48rem;
   z-index: 1000;
   transform: scaleY(0);
   transform-origin: top;
@@ -22,7 +22,7 @@
 .detail-content {
   position: relative;
   width: 100%;
-  padding: 25px;
+  padding: 2.5rem;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -38,17 +38,38 @@
 
 /* Style for the modal title */
 .detail-content h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 0 2rem 1rem;
   font-size: 2.4rem;
 }
 
 /* Style for the modal description */
-.detail-content p {
+.detail-description {
   line-height: 2.3rem;
-  padding: 1rem 0;
+  padding: 1.5rem 1rem;
   border-top: 0.5px solid #807575;
   border-bottom: 0.5px solid #807575;
+}
+
+.detail-description p {
+  margin: 0;
+}
+
+.detail-toolSet h5 {
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+.detail-toolSet ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 1rem 0 1.5rem 1.5rem;
+  border-bottom: 0.5px solid #807575;
+  margin-bottom: 2rem;
+}
+
+.detail-toolSet ul li {
+  font-size: 1.4rem;
 }
 
 /* Style for the links container */
@@ -88,9 +109,17 @@
     font-size: 1.8rem;
   }
 
-  .detail-content p {
-    padding: 1.5rem;
+  .detail-description {
     line-height: 2.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .detail-toolSet ul {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  .detail-toolSet ul li {
+    font-size: 1.5rem;
   }
 
   .detail-content__actions {
@@ -100,18 +129,18 @@
 
 @media screen and (min-width: 899px) {
   .modal {
-    max-width: 55rem;
+    max-width: 60rem;
   }
 
   .modal h2 {
     font-size: 2.6rem;
   }
 
-  .detail-content {
-    font-size: 2rem;
+  .detail-toolSet h5 {
+    margin-left: 2rem;
   }
 
-  .detail-content__actions {
-    font-size: 1.8rem;
+  .detail-toolSet ul {
+    padding-left: 3rem;
   }
 }

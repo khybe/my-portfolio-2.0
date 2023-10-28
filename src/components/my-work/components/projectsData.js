@@ -13,6 +13,7 @@ export const projectsData = [
        It is a simple yet engaging game that can be played alone or with friends.`,
     githubLink: "https://github.com/khybe/guess-my-number",
     projectLink: "https://guess-my-number-eight-plum.vercel.app/",
+    toolSet: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
     id: "p2",
@@ -22,6 +23,7 @@ export const projectsData = [
       The game can improve cognitive skills such as working memory and attention.`,
     githubLink: "https://github.com/khybe/Simon-says",
     projectLink: "https://simon-says-orcin.vercel.app/",
+    toolSet: ["HTML", "CSS", "SCSS", "JavaScript", "React"],
   },
   {
     id: "p3",
@@ -32,18 +34,26 @@ export const projectsData = [
       2. It's a jeopardy game where players make decisions on whether to risk previous gains for greater gains by rolling again.`,
     githubLink: "https://github.com/khybe/pig-game",
     projectLink: "https://pig-game-bay.vercel.app/",
+    toolSet: ["HTML", "CSS", "JavaScript", "React"],
   },
 
   {
     id: "p4",
     title: "Your Place",
     image: yourplaceImage,
-    description: `Your Places is a MERN full-stack web app with MongoDB, Express, React, and Node.
-        It has auth, authorization, CRUD operations, and uses AWS S3 for image storage. Users can add multiple 
-        locations and view them on a Google Map modal.`,
+    description: `Your Place is a feature-rich full-stack app offering seamless user experience with user controls, key CRUD operations, AWS S3 for image storage, and integrated Google Maps for location visualization.`,
     githubLink:
       "https://github.com/khybe/yourplace-MERN-project-with-CRUD-operations-frontend",
     projectLink: "https://yourplace-6ac22.web.app/",
+    toolSet: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "MongoDB",
+      "Express",
+      "Node",
+    ],
   },
   { id: "p5", title: "Coming Soon", image: comingSoonImage },
   { id: "p6", title: "Coming Soon", image: comingSoonImage },
