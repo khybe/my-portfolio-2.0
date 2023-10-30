@@ -36,6 +36,11 @@
   font-weight: 800;
 }
 
+.active a {
+  border-bottom: 2px solid var(--color-rustic-red);
+  font-weight: 800;
+}
+
 /* Media query for larger screens (Desktop styles) */
 @media (min-width: 769px) {
   .navLinks {

@@ -49,7 +49,7 @@ function Header() {
           <div className={bar}></div>
           <div className={bar}></div>
         </button>
-        <NavLinks isOpen={isOpen} onClick={HandleNavbarToggle} />
+        <NavLinks isOpen={isOpen} onToggleMenu={HandleNavbarToggle} />
       </nav>
     </header>
   );
