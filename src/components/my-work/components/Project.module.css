@@ -19,6 +19,7 @@
   width: 100%;
   max-width: 34rem;
   cursor: pointer;
+  box-shadow: -4px 4px 10px rgba(48, 48, 48, 0.8);
 }
 
 .project-item img:hover {
