@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Fade from "react-reveal/Fade";
+
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import { projectsData } from "./components/projectsData";
 
@@ -31,12 +33,16 @@ const MyWork = () => {
 
   return (
     <section id="projects">
-      <h2>MY WORK</h2>
-      <ProjectList
-        showMore={showMore}
-        onOpenModal={openModalHandler}
-        projectsData={projectsData}
-      />
+      <Fade right>
+        <h2>MY WORK</h2>
+      </Fade>
+      <Fade left>
+        <ProjectList
+          showMore={showMore}
+          onOpenModal={openModalHandler}
+          projectsData={projectsData}
+        />
+      </Fade>
       <button
         className="show-more-button"
         onClick={() => setShowMore(!showMore)}

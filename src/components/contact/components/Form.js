@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Fade from "react-reveal/Fade";
+
 import Input from "./Input";
 import Button from "../../../UI/Button";
 import "./Form.css";
@@ -31,21 +33,23 @@ const Form = (props) => {
 
   return (
     <form ref={formRef} onSubmit={submitHandler}>
-      <div className="control-group">
-        <Input {...nameInputConfig} />
-        <Input {...emailInputConfig} />
-      </div>
-      <div className="control-group">
-        <Input {...phoneInputConfig} />
-        <Input {...addressInputConfig} />
-      </div>
-      <Input {...subjectInputConfig} />
-      <Input {...messageInputConfig} />
-      <div className="form-actions">
-        <Button className="form-button" type="submit" disabled={!formIsValid}>
-          Submit
-        </Button>
-      </div>
+      <Fade right>
+        <div className="control-group">
+          <Input {...nameInputConfig} />
+          <Input {...emailInputConfig} />
+        </div>
+        <div className="control-group">
+          <Input {...phoneInputConfig} />
+          <Input {...addressInputConfig} />
+        </div>
+        <Input {...subjectInputConfig} />
+        <Input {...messageInputConfig} />
+        <div className="form-actions">
+          <Button className="form-button" type="submit" disabled={!formIsValid}>
+            Submit
+          </Button>
+        </div>
+      </Fade>
       {formIsSubmitted && (
         <div className="submission-confirmation">
           <p>
