@@ -15,7 +15,6 @@
 .githubLink:hover,
 .linkedinLink:hover {
   transform: scale(1.2); /* Add a slight scale effect on hover */
-  border-bottom: 2px solid var(--color-rustic-red);
 }
 
 @media (min-width: 1150px) {
