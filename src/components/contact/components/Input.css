@@ -1,20 +1,24 @@
+/* Styles for form control elements */
 .form-control {
   margin-bottom: 1rem;
   width: 100%;
 }
 
+/* Display the input and label elements as blocks aligned to the left */
 .form-control input,
 .form-control label {
   display: block;
   text-align: left;
 }
 
+/* Style for the form control label */
 .form-control label {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
+/* Styling for input, select, and textarea elements */
 .form-control input,
 .form-control select,
 .form-control textarea {
@@ -25,10 +29,12 @@
   width: 100%;
 }
 
+/* Specific styles for textareas */
 .form-control textarea {
   height: 12rem;
 }
 
+/* Focus styles for input and textarea */
 .form-control input:focus,
 .form-control textarea:focus {
   outline: none;
@@ -36,18 +42,21 @@
   background-color: #e0d4fd;
 }
 
+/* Styles for inputs/textarea with invalid input */
 .invalid input,
 .invalid textarea {
   border: 1px solid #b40e0e;
   background-color: #fddddd;
 }
 
+/* Focus styles for inputs/textarea with invalid input */
 .invalid input:focus,
 .invalid textarea:focus {
   border-color: #ff8800;
   background-color: #fbe8d2;
 }
 
+/* Style for error text */
 .error-text {
   color: #b40e0e;
 }

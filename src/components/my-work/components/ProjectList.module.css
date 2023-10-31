@@ -1,5 +1,5 @@
-/* Apply a masonry layout */
+/* Apply a masonry layout using flexbox with wrapping */
 .masonry {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
 }

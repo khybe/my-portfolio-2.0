@@ -1,35 +1,41 @@
+/* Adds left padding to the skills container */
 .skillsContainer {
   padding-left: 4%;
 }
 
+/* Styles for list items inside the skills container */
 .skillsContainer li {
-  padding-left: 0.5rem;
-  padding-bottom: 0.4rem;
-  text-shadow: 2px 2px 4px #000;
+  padding-left: 0.5rem; /* Adds padding to the left of list items */
+  padding-bottom: 0.4rem; /* Adds bottom padding for spacing */
+  text-shadow: 2px 2px 4px #000; /* Applies a text shadow for a visual effect */
 }
 
+/* Styles for the span elements inside list items */
 .skillsContainer span {
-  margin-left: 1rem;
+  margin-left: 1rem; /* Provides space between list bullet and the text content */
 }
 
+/* Media query for small screens (min-width: 350px) */
 @media (min-width: 350px) {
   .skillsContainer li {
-    padding-left: 1rem;
+    padding-left: 1rem; /* Adjusts the left padding of list items for wider screens */
   }
 }
 
+/* Media query for screens wider than 540px */
 @media (min-width: 540px) {
   .skillsContainer {
-    display: flex;
-    gap: 5rem;
-    padding-bottom: 2rem;
-    border: 0.1px solid rgb(82, 78, 78);
-    border-radius: 4px;
+    display: flex; /* Changes display to flex for a horizontal layout */
+    gap: 5rem; /* Introduces a gap between child elements for better spacing */
+    padding-bottom: 2rem; /* Adds bottom padding for the container */
+    border: 0.1px solid rgb(82, 78, 78); /* Adds a border to the container */
+    border-radius: 4px; /* Rounds the container's corners */
   }
 }
 
+/* Media query for larger screens (min-width: 1000px) */
 @media (min-width: 1000px) {
   .skillsContainer {
-    gap: 8rem;
+    gap: 8rem; /* Increases the gap between child elements for wider screens */
   }
 }

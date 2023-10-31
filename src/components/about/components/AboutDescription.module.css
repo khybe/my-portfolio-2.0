@@ -1,31 +1,31 @@
 .aboutDescription {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px; /* Set letter spacing for the AboutDescription */
 }
 
 .aboutTitle {
-  margin-left: 1.5rem;
+  margin-left: 1.5rem; /* Apply left margin to the AboutTitle class */
 }
 
 .aboutDescription p {
-  border: 0.1px solid rgb(82, 78, 78);
-  border-radius: 4px;
-  padding: 1.5rem;
-  text-shadow: 2px 2px 4px #000;
+  border: 0.1px solid rgb(82, 78, 78); /* Add a thin border to paragraphs within the AboutDescription */
+  border-radius: 4px; /* Apply border radius */
+  padding: 1.5rem; /* Add padding to the paragraphs in AboutDescription */
+  text-shadow: 2px 2px 4px #000; /* Apply text shadow effect */
 }
 
 @media (min-width: 500px) {
   .aboutDescription {
-    padding: 0 2rem;
-    letter-spacing: 0.5px;
+    padding: 0 2rem; /* Modify padding for larger screens */
+    letter-spacing: 0.5px; /* Adjust letter spacing */
   }
 }
 
 @media (min-width: 1150px) {
   .aboutDescription {
-    padding-right: 3rem;
+    padding-right: 3rem; /* Add padding to the right side for very large screens */
   }
 
   .aboutDescription p {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Change the font size of paragraphs within AboutDescription */
   }
 }

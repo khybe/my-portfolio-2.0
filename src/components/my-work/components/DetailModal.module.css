@@ -1,146 +1,150 @@
+/* Style for the modal */
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 48rem;
-  z-index: 1000;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.5s ease-in-out;
+  position: fixed; /* Fixed positioning */
+  top: 50%; /* Position at 50% from the top */
+  left: 50%; /* Position at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the modal */
+  background: white; /* White background */
+  border: 1px solid #ccc; /* Border with light color */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  width: 100%; /* Full width */
+  max-width: 48rem; /* Maximum width of 48rem */
+  z-index: 1000; /* Set the z-index */
+  transform: scaleY(0); /* Initial scaling */
+  transform-origin: top; /* Set scaling origin */
+  transition: transform 0.5s ease-in-out; /* Apply transition for scaling */
 }
 
+/* Show the active state of the modal */
 .modal.active {
-  transform: scaleY(1);
+  transform: scaleY(1); /* Activate the modal with scaling */
 }
 
+/* Style for the content inside the modal */
 .detail-content {
-  position: relative;
-  width: 100%;
-  padding: 2.5rem;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  font-size: 1.6rem;
+  position: relative; /* Position relative */
+  width: 100%; /* Full width */
+  padding: 2.5rem; /* Padding for the content */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Larger border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Stronger box shadow */
+  font-size: 1.6rem; /* Font size */
 }
 
 .detail-content__close-icon {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  cursor: pointer;
+  position: absolute; /* Absolute positioning */
+  top: 16px; /* Position from the top */
+  right: 16px; /* Position from the right */
+  cursor: pointer; /* Pointer cursor */
 }
 
 /* Style for the modal title */
 .detail-content h2 {
-  margin: 0 0 2rem 1rem;
-  font-size: 2.4rem;
+  margin: 0 0 2rem 1rem; /* Margin for the title */
+  font-size: 2.4rem; /* Font size for the title */
 }
 
 /* Style for the modal description */
 .detail-description {
-  line-height: 2.3rem;
-  padding: 1.5rem 1rem;
-  border-top: 0.5px solid #807575;
-  border-bottom: 0.5px solid #807575;
+  line-height: 2.3rem; /* Line height */
+  padding: 1.5rem 1rem; /* Padding for the description */
+  border-top: 0.5px solid #807575; /* Top border */
+  border-bottom: 0.5px solid #807575; /* Bottom border */
 }
 
 .detail-description p {
-  margin: 0;
+  margin: 0; /* Remove margin for paragraphs */
 }
 
 .detail-toolSet h5 {
-  margin: 1rem;
-  margin-bottom: 0;
+  margin: 1rem; /* Margin for the toolset title */
+  margin-bottom: 0; /* Remove bottom margin */
 }
 
 .detail-toolSet ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
-  padding: 1rem 0 1.5rem 1.5rem;
-  border-bottom: 0.5px solid #807575;
-  margin-bottom: 2rem;
+  display: flex; /* Display as flexbox */
+  flex-wrap: wrap; /* Wrap elements */
+  gap: 1rem 2rem; /* Gap between elements */
+  padding: 1rem 0 1.5rem 1.5rem; /* Padding for the toolset */
+  border-bottom: 0.5px solid #807575; /* Bottom border */
+  margin-bottom: 2rem; /* Bottom margin */
 }
 
 .detail-toolSet ul li {
-  font-size: 1.4rem;
+  font-size: 1.4rem; /* Font size for list items */
 }
 
 /* Style for the links container */
 .detail-content__actions {
-  display: flex;
-  gap: 1rem;
+  display: flex; /* Display as flexbox */
+  gap: 1rem; /* Gap between elements */
 }
 
 .detail-content__button {
-  padding: 4px 8px;
-  width: 16rem;
-  background-color: var(--color-charcoal);
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
+  padding: 4px 8px; /* Padding for buttons */
+  width: 16rem; /* Fixed width for buttons */
+  background-color: var(--color-charcoal); /* Background color */
+  color: #fff; /* Text color */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  text-align: center; /* Center text */
 }
 
 .detail-content__button:hover {
-  background-color: #212020;
+  background-color: #212020; /* Change background color on hover */
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.8); /* Add a subtle box shadow on hover */
-  border: 2px solid var(--color-rustic-red);
-  font-weight: 600;
+  border: 2px solid var(--color-rustic-red); /* Change border on hover */
+  font-weight: 600; /* Increase font weight on hover */
 }
 
 .detail-content__button:active {
   color: var(--color-rustic-red); /* Change text color on active */
-  border: 3px solid var(--color-rustic-red);
+  border: 3px solid var(--color-rustic-red); /* Change border on active */
 }
 
+/* Media queries for different screen sizes */
 @media screen and (min-width: 599px) {
   .modal {
-    max-width: 50rem;
+    max-width: 50rem; /* Adjust max width on larger screens */
   }
 
   .detail-content {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Adjust font size on larger screens */
   }
 
   .detail-description {
-    line-height: 2.5rem;
-    padding: 2rem 1.5rem;
+    line-height: 2.5rem; /* Adjust line height on larger screens */
+    padding: 2rem 1.5rem; /* Adjust padding on larger screens */
   }
 
   .detail-toolSet ul {
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem 1rem 1rem 2rem; /* Adjust padding on larger screens */
   }
 
   .detail-toolSet ul li {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Adjust font size on larger screens */
   }
 
   .detail-content__actions {
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* Adjust font size on larger screens */
   }
 }
 
 @media screen and (min-width: 899px) {
   .modal {
-    max-width: 60rem;
+    max-width: 60rem; /* Adjust max width on even larger screens */
   }
 
   .modal h2 {
-    font-size: 2.6rem;
+    font-size: 2.6rem; /* Adjust title font size on larger screens */
   }
 
   .detail-toolSet h5 {
-    margin-left: 2rem;
+    margin-left: 2rem; /* Adjust margin on larger screens */
   }
 
   .detail-toolSet ul {
-    padding-left: 3rem;
+    padding-left: 3rem; /* Adjust padding on larger screens */
   }
 }

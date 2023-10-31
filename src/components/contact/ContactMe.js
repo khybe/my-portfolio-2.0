@@ -7,8 +7,9 @@ import useInput from "../../hooks/use-input";
 import "./ContactMe.css";
 
 const ContactMe = () => {
-  const form = useRef();
+  const form = useRef(); // Create a reference to the form for sending email
 
+  // Handling different input fields using custom hook useInput for form validation
   const {
     value: enteredName,
     isValid: enteredNameIsValid,
@@ -56,16 +57,18 @@ const ContactMe = () => {
     reset: resetMessageInput,
   } = useInput((value) => value.length >= 50);
 
+  // Checking if the form is valid based on input field validations
   let formIsValid = false;
-
   if (enteredNameIsValid && enteredEmailIsValid && enteredMessageIsValid) {
     formIsValid = true;
   }
 
+  // Sending email on form submission
   const sendEmail = (e) => {
     e.preventDefault();
 
     if (formIsValid) {
+      // Using emailjs to send the form data
       emailjs
         .sendForm(
           process.env.REACT_APP_EMAILJS_SERVICE_KEY,
@@ -75,7 +78,7 @@ const ContactMe = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
+            console.log(result.text); // Log email send result
             console.log({
               name: enteredName,
               email: enteredEmail,
@@ -83,16 +86,18 @@ const ContactMe = () => {
               address: enteredAddress,
               subject: enteredSubject,
               message: enteredMessage,
-            });
+            }); // Log the form data
           },
           (error) => {
-            console.log(error.text);
+            console.log(error.text); // Log any error during email sending
           }
         );
     }
   };
 
+  // Resetting form inputs
   const resetForm = () => {
+    // Reset each input field
     resetNameInput();
     resetEmailInput();
     resetPhoneInput();
@@ -101,6 +106,8 @@ const ContactMe = () => {
     resetMessageInput();
   };
 
+  // Configuration for input fields in the contact form
+  // This data is passed to the Form component to render the form fields
   const nameInputConfig = {
     name: "user_name",
     id: "name",
@@ -173,7 +180,9 @@ const ContactMe = () => {
 
   return (
     <section id="contact">
+      {/* Render contact information */}
       <ContactInfo />
+      {/* Render the Form component with input field configurations */}
       <Form
         formIsValid={formIsValid}
         nameInputConfig={nameInputConfig}

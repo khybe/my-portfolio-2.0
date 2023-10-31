@@ -1,68 +1,75 @@
 /* Basic styles for the header and navigation (Mobile-first) */
+
+/* General styles for the header section */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  padding: 1rem 1.5rem;
-  background-color: var(--color-charcoal);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  z-index: 999;
+  position: fixed; /* Fixed positioning for the header */
+  top: 0; /* Positioned at the top of the viewport */
+  left: 0; /* Positioned at the left of the viewport */
+  width: 100%; /* Takes up full width of the viewport */
+  height: 5rem; /* Fixed height for the header */
+  padding: 1rem 1.5rem; /* Internal padding for content within the header */
+  background-color: var(--color-charcoal); /* Background color for the header */
+  display: flex; /* Uses flexbox for content layout */
+  justify-content: space-between; /* Spacing between elements */
+  align-items: center; /* Centers items along the vertical axis */
+  font-size: 1.6rem; /* Font size for text */
+  letter-spacing: 1px; /* Spacing between letters */
+  z-index: 999; /* Z-index for stacking order */
 }
 
+/* Styles for the navigation bar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: flex; /* Uses flexbox for content layout */
+  justify-content: space-between; /* Spacing between elements */
+  width: 100%; /* Takes up full width */
 }
 
+/* Styles for the logo image */
 .logo img {
-  max-width: 4.5rem;
-  height: auto;
-  margin-top: 0.5rem;
+  max-width: 4.5rem; /* Maximum width for the logo */
+  height: auto; /* Automatically adjusts height */
+  margin-top: 0.5rem; /* Top margin */
 }
 
+/* Styles for the menu button */
 .menuButton {
   display: block; /* Display the menu button on smaller screens */
-  cursor: pointer;
-  background: transparent;
-  border: none;
+  cursor: pointer; /* Cursor style for interaction */
+  background: transparent; /* Transparent button background */
+  border: none; /* No border for the button */
 }
 
+/* Styles for the opened menu button */
 .menuButton.open .bar {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px); /* Transform the bars for open menu */
 }
 
 .menuButton.open .bar:nth-child(2) {
-  opacity: 0;
+  opacity: 0; /* Hide the second bar in the open menu button */
 }
 
 .menuButton.open .bar:last-child {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px); /* Transform the bars for open menu */
 }
 
+/* Styles for the individual bars of the menu button */
 .bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
-  transition: 0.4s;
+  width: 25px; /* Width of the bar */
+  height: 3px; /* Height of the bar */
+  background-color: white; /* Color of the bar */
+  margin: 3px 0; /* Spacing between bars */
+  transition: 0.4s; /* Transition duration for animation */
 }
 
 /* Media query for larger screens (Desktop styles) */
 @media (min-width: 769px) {
   header {
-    font-size: 1.8rem;
-    height: 6rem;
+    font-size: 1.8rem; /* Font size for larger screens */
+    height: 6rem; /* Adjusted height for larger screens */
   }
 
   .logo img {
-    max-width: 5rem;
+    max-width: 5rem; /* Adjusted maximum width for the logo */
   }
 
   .menuButton {

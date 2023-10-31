@@ -46,6 +46,7 @@ const NavLinks = ({ isOpen, onToggleMenu }) => {
 
   // Function to handle scroll
   const handleScroll = () => {
+    // Calculate the offset tops of each section
     const sectionTops = Array.from(document.querySelectorAll("section")).map(
       (section) => ({
         id: `#${section.id}`,
@@ -56,6 +57,7 @@ const NavLinks = ({ isOpen, onToggleMenu }) => {
 
     const currentScroll = window.scrollY + 200;
 
+    // Determine the active section based on the scroll position
     for (let i = sectionTops.length - 1; i >= 0; i--) {
       if (
         currentScroll >= sectionTops[i].offset &&

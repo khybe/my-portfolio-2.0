@@ -1,23 +1,23 @@
-import Header from "./components/header/Header";
-import Home from "./components/home/Home";
-import AboutMe from "./components/about/AboutMe";
-import MyWork from "./components/my-work/MyWork";
-import ContactMe from "./components/contact/ContactMe";
-import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header"; // Import the Header component
+import Home from "./components/home/Home"; // Import the Home component
+import AboutMe from "./components/about/AboutMe"; // Import the AboutMe component
+import MyWork from "./components/my-work/MyWork"; // Import the MyWork component
+import ContactMe from "./components/contact/ContactMe"; // Import the ContactMe component
+import Footer from "./components/footer/Footer"; // Import the Footer component
 
 function App() {
   return (
     <div>
-      <Header />
+      <Header /> {/* Render the Header component */}
       <main>
-        <Home />
-        <AboutMe />
-        <MyWork />
-        <ContactMe />
+        <Home /> {/* Render the Home component */}
+        <AboutMe /> {/* Render the AboutMe component */}
+        <MyWork /> {/* Render the MyWork component */}
+        <ContactMe /> {/* Render the ContactMe component */}
       </main>
-      <Footer />
+      <Footer /> {/* Render the Footer component */}
     </div>
   );
 }
 
-export default App;
+export default App; // Export the App component as the default export

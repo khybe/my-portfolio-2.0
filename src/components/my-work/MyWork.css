@@ -1,32 +1,35 @@
 /* MyWork.css */
+
 #projects {
-  text-align: center;
-  padding-top: 2rem;
+  text-align: center; /* Center-align text within the projects section */
+  padding-top: 2rem; /* Add padding at the top of the projects section */
 }
 
 .show-more-button {
-  font-size: 1.4rem;
-  background-color: transparent;
-  border: none;
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-  color: var(--color-charcoal);
+  font-size: 1.4rem; /* Set the font size for the show more/less button */
+  background-color: transparent; /* Set the background of the button as transparent */
+  border: none; /* Remove button border */
+  margin-bottom: 0.5rem; /* Add margin at the bottom of the button */
+  cursor: pointer; /* Set cursor as pointer on hover */
+  color: var(
+    --color-charcoal
+  ); /* Set text color using a custom color variable */
 }
 
 .show-more-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.5px;
+  display: block; /* Display the show more/less label as a block element */
+  margin-bottom: 0.5rem; /* Add margin at the bottom of the label */
+  letter-spacing: 0.5px; /* Set letter spacing for the label text */
 }
 
 .scroll-down-icon {
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* Set the font size for the scroll-down icon */
 }
 
 .show-more-button:hover {
-  font-size: 1.6rem;
+  font-size: 1.6rem; /* Change font size of the button on hover */
 }
 
 .scroll-down-icon:hover {
-  font-size: 2rem;
+  font-size: 2rem; /* Change font size of the scroll-down icon on hover */
 }

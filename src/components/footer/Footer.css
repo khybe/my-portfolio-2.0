@@ -1,41 +1,42 @@
 /* Style the footer */
 .footer {
-  background-color: white;
-  color: #000;
-  text-align: center;
-  padding: 2rem 0;
-  width: 100%;
-  font-size: 1.4rem;
-  letter-spacing: 0.5px;
+  background-color: white; /* Background color of the footer */
+  color: #000; /* Text color */
+  text-align: center; /* Align text content to the center */
+  padding: 2rem 0; /* Padding around the footer content */
+  width: 100%; /* Full width */
+  font-size: 1.4rem; /* Font size */
+  letter-spacing: 0.5px; /* Letter spacing */
 }
 
 /* Style footer elements */
 .footer-element {
-  margin: 1rem;
+  margin: 1rem; /* Margin for each footer element */
 }
 
 .footer-element a {
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
+  color: #000; /* Anchor (link) color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: 500; /* Set the font weight */
 }
 
 /* Style the social links horizontally */
 .social-links a {
-  font-size: 2.2rem;
+  font-size: 2.2rem; /* Font size for social media icons */
 }
 
 /* Style the copyright text */
 .copyright {
-  font-size: 1.2rem;
-  margin-top: 1rem;
+  font-size: 1.2rem; /* Font size for the copyright text */
+  margin-top: 1rem; /* Top margin for the copyright element */
 }
 
+/* Media query for larger screens */
 @media screen and (min-width: 549px) {
   .footer {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Adjusted font size for larger screens */
   }
   .copyright {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Adjusted font size for the copyright text on larger screens */
   }
 }

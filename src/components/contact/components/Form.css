@@ -1,52 +1,59 @@
+/* Styles for the form */
 form {
-  width: 90%;
-  max-width: 54rem;
-  margin: auto;
-  font-size: 1.4rem;
+  width: 90%; /* Set the width of the form to 90% of its parent container */
+  max-width: 54rem; /* Set the maximum width of the form to 54rem */
+  margin: auto; /* Center the form horizontally */
+  font-size: 1.4rem; /* Set the font size for the form */
 }
 
+/* Styles for the input groups */
 .control-group {
-  display: flex;
-  column-gap: 1rem;
-  flex-wrap: wrap;
+  display: flex; /* Display input groups using flexbox */
+  column-gap: 1rem; /* Set the gap between columns to 1rem */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 }
 
+/* Styles for the form controls within the input groups */
 .control-group .form-control {
-  min-width: 23rem;
-  flex: 1;
+  min-width: 23rem; /* Set the minimum width of form controls within input groups */
+  flex: 1; /* Allow form controls to expand and fill available space */
 }
 
+/* Styles for the form actions */
 .form-actions {
-  text-align: left;
+  text-align: left; /* Align form actions to the left */
 }
 
+/* Styles for the form submit button */
 .form-button {
-  border: 2px solid var(--color-rustic-red);
-  color: var(--color-rustic-red);
-  padding: 3px 6px;
-  margin-left: 1rem;
-  max-width: 15rem;
-  font-size: 1.5rem;
-  margin-left: 1rem;
+  border: 2px solid var(--color-rustic-red); /* Add border to the submit button */
+  color: var(--color-rustic-red); /* Set text color for the submit button */
+  padding: 3px 6px; /* Set padding for the submit button */
+  margin-left: 1rem; /* Set left margin for the submit button */
+  max-width: 15rem; /* Set the maximum width for the submit button */
+  font-size: 1.5rem; /* Set the font size for the submit button */
 }
 
+/* Styles for the disabled state of the form submit button */
 .form-button:disabled,
 .form-button:disabled:hover,
 .form-button:disabled:active {
-  background-color: #9c9898;
-  color: #292929;
-  border-color: #ccc;
-  cursor: not-allowed;
+  background-color: #9c9898; /* Set background color for the disabled button */
+  color: #292929; /* Set text color for the disabled button */
+  border-color: #ccc; /* Set border color for the disabled button */
+  cursor: not-allowed; /* Set cursor to 'not-allowed' for the disabled button */
 }
 
+/* Styles for the submission confirmation message */
 .submission-confirmation {
-  font-size: 1.6rem;
-  padding-left: 1rem;
-  text-align: left;
+  font-size: 1.6rem; /* Set the font size for the submission confirmation message */
+  padding-left: 1rem; /* Add left padding to the submission confirmation message */
+  text-align: left; /* Align the submission confirmation message to the left */
 }
 
+/* Media query for larger screens (768px and above) */
 @media (min-width: 768px) {
   form {
-    width: 52%;
+    width: 52%; /* Adjust the width of the form to 52% for larger screens */
   }
 }

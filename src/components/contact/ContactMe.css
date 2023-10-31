@@ -1,23 +1,27 @@
+/* Styles for the #contact section */
 #contact {
-  background-color: var(--color-charcoal);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  padding: 3rem 0;
-  color: #fff;
+  background-color: var(
+    --color-charcoal
+  ); /* Set the background color using a custom variable */
+  display: flex; /* Use flexbox for layout control */
+  flex-direction: column; /* Arrange flex items in a column */
+  justify-content: space-around; /* Distribute space evenly around flex items */
+  text-align: center; /* Align text to the center */
+  padding: 3rem 0; /* Apply padding to the top and bottom */
+  color: #fff; /* Set the text color to white */
 }
 
-/* Media Queries for Responsive Design */
+/* Media Query for 768px and larger screens */
 @media (min-width: 768px) {
   #contact {
-    flex-direction: row;
-    padding: 6rem 2rem;
+    flex-direction: row; /* Change the flex items arrangement to a row */
+    padding: 6rem 2rem; /* Adjust the padding on larger screens */
   }
 }
 
+/* Media Query for 1200px and larger screens */
 @media (min-width: 1200px) {
   #contact {
-    border-radius: 6px;
+    border-radius: 6px; /* Add a border radius to give rounded corners */
   }
 }

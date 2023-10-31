@@ -1,9 +1,10 @@
+// Import images for each project
 import guessMyNumberImage from "../../../assets/guessMyNumber.png";
 import simonSaysImage from "../../../assets/simonSays.png";
 import pigGameImage from "../../../assets/pigGame.png";
 import yourplaceImage from "../../../assets/yourplace.png";
-import comingSoonImage from "../../../assets/comingSoon.jpg";
 
+// Data for different projects
 export const projectsData = [
   {
     id: "p1",
@@ -55,6 +56,4 @@ export const projectsData = [
       "Node",
     ],
   },
-  { id: "p5", title: "Coming Soon", image: comingSoonImage },
-  { id: "p6", title: "Coming Soon", image: comingSoonImage },
 ];

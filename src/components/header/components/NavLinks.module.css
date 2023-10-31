@@ -1,3 +1,4 @@
+/* Basic styles for the navigation links (Mobile-first) */
 .navLinks {
   list-style: none;
   display: none; /* Hide the navigation links by default on smaller screens */
@@ -10,41 +11,46 @@
   width: 70%;
   text-align: center;
   border-radius: 8px;
-  height: 65vh;
+  height: 65vh; /* Set the height of the navigation links for smaller screens */
 }
 
+/* When the navigation links are open */
 .navLinks.open {
   display: flex;
-  min-height: 26rem;
+  min-height: 26rem; /* Set a minimum height when open for smaller screens */
 }
 
+/* Styles for each list item within the navigation links */
 .navLinks li {
-  margin: 2rem;
+  margin: 2rem; /* Apply margin to each list item */
   margin-right: 20px;
 }
 
+/* Styles for the anchor tags within the navigation links */
 .navLinks a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.3s; /* Add a smooth transition effect for anchor tags */
 }
 
+/* Styles when hovering over anchor tags */
 .navLinks a:hover {
-  color: var(--color-rustic-red);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-weight: 800;
+  color: var(--color-rustic-red); /* Change color on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow effect on hover */
+  font-weight: 800; /* Adjust font weight on hover */
 }
 
+/* Styles for the active link in the navigation */
 .active a {
-  border-bottom: 2px solid var(--color-rustic-red);
-  font-weight: 800;
+  border-bottom: 2px solid var(--color-rustic-red); /* Add a bottom border for the active link */
+  font-weight: 800; /* Set a higher font weight for the active link */
 }
 
 /* Media query for larger screens (Desktop styles) */
 @media (min-width: 769px) {
   .navLinks {
-    height: auto;
+    height: auto; /* Reset height for larger screens */
     top: 0;
     padding-top: 0;
     display: flex; /* Display the navigation links by default on larger screens */
@@ -56,10 +62,12 @@
     text-align: left;
   }
 
+  /* Styles when the navigation links are open on larger screens */
   .navLinks.open {
     display: flex;
   }
 
+  /* Adjusted margin for list items on larger screens */
   .navLinks li {
     margin: 0 2rem;
     margin-right: 20px;

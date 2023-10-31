@@ -1,19 +1,27 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import MySkills from "./MySkills";
-import styles from "./AboutDescription.module.css";
+import MySkills from "./MySkills"; // Importing the MySkills component
+import styles from "./AboutDescription.module.css"; // Importing the CSS styles
 
 const AboutDescription = () => {
-  const { aboutDescription, aboutTitle } = styles;
+  const { aboutDescription, aboutTitle } = styles; // Destructuring CSS classes from the imported styles
 
   return (
     <article className={aboutDescription}>
+      {" "}
+      {/* Assigning the aboutDescription class */}
       <Fade left>
-        <h2 className={aboutTitle}>ABOUT ME</h2>
+        {" "}
+        {/* Fade animation effect from the left */}
+        <h2 className={aboutTitle}>ABOUT ME</h2>{" "}
+        {/* Applying the aboutTitle class */}
       </Fade>
       <Fade right>
+        {" "}
+        {/* Fade animation effect from the right */}
         <p>
+          {/* Description of the individual, showcasing their skills and experiences */}
           I am Khaibar Saadat, a self-taught front-end developer with a strong
           passion for technology and a talent for creating dynamic websites.
           <br />
@@ -31,10 +39,10 @@ const AboutDescription = () => {
           to me directly. Your web development aspirations are just a message
           away from becoming a reality.
         </p>
-        <MySkills />
+        <MySkills /> {/* Rendering the MySkills component */}
       </Fade>
     </article>
   );
 };
 
-export default AboutDescription;
+export default AboutDescription; // Exporting the AboutDescription component

@@ -1,83 +1,66 @@
+/* Set minimum width and center align about profile */
 .aboutProfile {
   min-width: 45%;
   text-align: center;
 }
 
+/* Styling for the about profile image */
 .aboutProfileImage {
-  border: 0.1px solid rgb(82, 78, 78);
-  width: 75%;
-  max-width: 30rem;
-  border-radius: 48% 48% 0 0;
+  border: 0.1px solid rgb(82, 78, 78); /* Adding a thin border to the profile image */
+  width: 75%; /* Set width for the profile image */
+  max-width: 30rem; /* Maximum width for the profile image */
+  border-radius: 48% 48% 0 0; /* Applying a specific border radius to shape the image */
 }
 
+/* Styling for the name within the about profile */
 .aboutProfile .name {
-  font-size: 2.6rem;
+  font-size: 2.6rem; /* Font size for the name within the about profile */
 }
 
+/* Styling for the profession within the about profile */
 .aboutProfile .profession {
-  font-size: 1.4rem;
-  margin-top: -1rem;
-  margin-bottom: 3rem;
+  font-size: 1.4rem; /* Font size for the profession within the about profile */
+  margin-top: -1rem; /* Margin adjustment at the top */
+  margin-bottom: 3rem; /* Margin adjustment at the bottom */
 }
 
+/* Styling for the buttons within the about profile */
 .buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: flex; /* Displays buttons in a flex container */
+  flex-direction: column; /* Aligns buttons in a column */
+  gap: 2rem; /* Spacing between buttons */
 }
 
-/* .socialIcons {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  margin-top: 3rem;
-} */
-
-/* .githubLink,
-.linkedinLink {
-  text-decoration: none;
-  color: #fff;
-  font-size: 3rem;
-} */
-
-/* .githubLink:hover,
-.linkedinLink:hover {
-  transform: scale(1.2); 
-  border-bottom: 2px solid var(--color-rustic-red);
-} */
-
+/* Media query for screens larger than 500px */
 @media (min-width: 500px) {
   .aboutProfile .name {
-    font-size: 3rem;
+    font-size: 3rem; /* Increases font size of the name for larger screens */
   }
 }
 
+/* Media query for screens larger than 850px */
 @media (min-width: 850px) {
   .aboutProfile {
-    min-width: 42%;
-    padding-top: 4rem;
+    min-width: 42%; /* Adjusts minimum width of the about profile */
+    padding-top: 4rem; /* Padding added at the top */
   }
 
   .aboutProfileImage {
-    width: 80%;
+    width: 80%; /* Adjusted width for the profile image on larger screens */
   }
 
   .aboutProfile .profession {
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* Adjusted font size for profession on larger screens */
   }
 }
 
+/* Media query for screens larger than 1150px */
 @media (min-width: 1150px) {
   .aboutProfile {
-    min-width: 40%;
+    min-width: 40%; /* Further adjusts the minimum width of the about profile */
   }
 
   .aboutProfile .name {
-    letter-spacing: 0.8px;
+    letter-spacing: 0.8px; /* Adds letter-spacing to the name on larger screens */
   }
-
-  /* .githubLink,
-  .linkedinLink {
-    font-size: 3.5rem;
-  } */
 }

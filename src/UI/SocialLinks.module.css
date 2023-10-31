@@ -1,25 +1,27 @@
 .socialLinks {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  margin-top: 3rem;
+  display: flex; /* Set display property to flex for the container */
+  justify-content: center; /* Center the flex items along the main axis */
+  gap: 4rem; /* Set the gap between flex items to 4rem */
+  margin-top: 3rem; /* Apply top margin of 3rem */
 }
 
 .githubLink,
 .linkedinLink {
-  text-decoration: none;
-  color: #fff;
-  font-size: 3rem;
+  text-decoration: none; /* Remove default link underline */
+  color: #fff; /* Set text color to white */
+  font-size: 3rem; /* Set the font size to 3rem for GitHub and LinkedIn links */
 }
 
 .githubLink:hover,
 .linkedinLink:hover {
-  transform: scale(1.2); /* Add a slight scale effect on hover */
+  transform: scale(
+    1.2
+  ); /* Add a slight scale effect on hover to increase size by 20% */
 }
 
 @media (min-width: 1150px) {
   .githubLink,
   .linkedinLink {
-    font-size: 3.5rem;
+    font-size: 3.5rem; /* For larger screens, increase the font size to 3.5rem */
   }
 }
