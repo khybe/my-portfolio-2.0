@@ -15,12 +15,8 @@ This single-page portfolio provides extensive insight into my professional journ
 - **ContactInfo.js:** Displays and manages contact information.
 - **AboutProfile.js:** Showcases the profile image and contact buttons.
 - **AboutDescription.js:** Highlights the introduction and skills sections using engaging animations.
+- **DetailModal.js:** Modal for project's detailed information.
 - **Global CSS files:** Provide comprehensive styling elements for the entire project.
-
-## Components and Modules
-- **AboutMe:** Synergizes the AboutProfile and AboutDescription components, presenting a detailed About Me section.
-- **ContactMe:** Integrates ContactInfo and Form components for the Contact section, ensuring seamless functionality. Utilizes the `useInput` custom hook for form validation.
-- **MySkills:** Displays specialized and familiar skills with animations using React Reveal.
 
 ## Styling, Responsiveness, and Animations
 - The project implements CSS for styling, responsive design, and media query usage.
@@ -31,7 +27,7 @@ This single-page portfolio provides extensive insight into my professional journ
 
 ## Accessibility and User Experience
 - Prioritizes accessibility with semantic HTML elements and a user-friendly design.
-- Enhances user experience and aesthetic appeal using engaging animations throughout the project, powered by React Reveal.
+- Enhances user experience and aesthetic appeal using engaging animations throughout the project, powered by React Reveal and the detail modal for presenting additional information.
 
 ## Media and Version Control
 - Uses images for graphical elements and avatars, alongside implementing icons and logos as required.
@@ -48,5 +44,6 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to fork and modify this project for your personal use. If you'd like to contribute, please create a pull request outlining your proposed changes. Your contributions are greatly appreciated!
 
 **Happy coding!**
+
 
 
