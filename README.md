@@ -1,6 +1,6 @@
 # MyPortfolio-2.0
 
-This single-page portfolio provides extensive insight into my professional journey as a front-end developer. Constructed with React, HTML, and CSS, the project is structured into distinct sections: Home, About Me, My Work, Contact, and Footer.
+This single-page portfolio provides extensive insight into my professional journey as a front-end developer. Constructed with React, HTML, CSS, and JavaScript, the project is structured into distinct sections: Home, About Me, My Work, Contact, and Footer.
 
 ## File Structure
 - **Home.js:** Introduction section of the portfolio.
