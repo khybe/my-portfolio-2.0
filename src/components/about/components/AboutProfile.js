@@ -28,7 +28,7 @@ const AboutProfile = () => {
         <div className={buttons}>
           {" "}
           {/* Div containing buttons with a specific class */}
-          <Button href="https://drive.google.com/file/d/1vVOhrLF7ZmOfJQXGgbakIfpsflboVmpf/view?usp=sharing">
+          <Button href="https://drive.google.com/file/d/1dsXVNpjZcU5haXkCLbsYkPkidDVZaR0A/view">
             Resume {/* Button to view resume */}
           </Button>
           <Button href="mailto:saadat.khaibar@gmail.com">Email</Button>{" "}
