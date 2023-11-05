@@ -3,6 +3,7 @@ import guessMyNumberImage from "../../../assets/guessMyNumber.png";
 import simonSaysImage from "../../../assets/simonSays.png";
 import pigGameImage from "../../../assets/pigGame.png";
 import yourplaceImage from "../../../assets/yourplace.png";
+import todoAppImage from "../../../assets/todoApp.png";
 
 // Data for different projects
 export const projectsData = [
@@ -55,5 +56,13 @@ export const projectsData = [
       "Express",
       "Node",
     ],
+  },
+  {
+    id: "p5",
+    title: "Todo App",
+    image: todoAppImage,
+    description: `Practice project: a powerful ToDo App using TypeScript. Offers seamless task management with dynamic task addition and deletion. Experience real-world TypeScript application and Context API for effective state management, enhancing your development skills.`,
+    githubLink: "https://github.com/khybe/todo-react-ts-guide",
+    toolSet: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
   },
 ];
