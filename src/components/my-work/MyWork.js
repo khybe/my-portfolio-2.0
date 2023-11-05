@@ -34,7 +34,7 @@ const MyWork = () => {
   return (
     <section id="projects">
       <Fade right>
-        <h2>MY WORK</h2> {/* Title for My Work section with animation */}
+        <h2>SELECTED WORKS</h2> {/* Title for My Work section with animation */}
       </Fade>
       <Fade left>
         <ProjectList
@@ -48,7 +48,8 @@ const MyWork = () => {
         onClick={() => setShowMore(!showMore)} // Toggle the showMore state on button click
       >
         <span className="show-more-label">
-          {showMore ? "Show Less" : "Show More"} {/* Toggle button label based on showMore state */}
+          {showMore ? "Show Less" : "Show More"}{" "}
+          {/* Toggle button label based on showMore state */}
         </span>
         {showMore ? (
           <AiOutlineUp className="scroll-up-icon" /> // Show scroll-up icon if showMore is true
@@ -68,4 +69,3 @@ const MyWork = () => {
 };
 
 export default MyWork; // Export the MyWork component as the default export
-
