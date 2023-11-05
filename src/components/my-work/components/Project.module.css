@@ -20,11 +20,15 @@
   border-radius: 4px; /* Apply rounded corners to the image */
   width: 100%; /* Make the image fill its container */
   max-width: 34rem; /* Limit the maximum width of the image */
-  cursor: pointer; /* Show pointer cursor on hover */
   box-shadow: -4px 4px 10px rgba(48, 48, 48, 0.8); /* Add a subtle box shadow */
+  margin: auto;
 }
 
-.project-item img:hover {
+.project-item a img {
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.project-item a img:hover {
   border: 3px solid var(--color-rustic-red); /* Change border color on hover */
   border-radius: 4px; /* Maintain rounded corners */
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.8); /* Adjust box shadow on hover */
