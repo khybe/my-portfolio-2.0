@@ -43,6 +43,19 @@ const MyWork = () => {
           projectsData={projectsData} // Pass project data to the ProjectList component
         />
       </Fade>
+      {showMore && (
+        <p className="more-projects-visit">
+          Explore more of my work on
+          <a
+            href="https://github.com/khybe?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          .
+        </p>
+      )}
       <button
         className="show-more-button"
         onClick={() => setShowMore(!showMore)} // Toggle the showMore state on button click

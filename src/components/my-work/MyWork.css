@@ -5,6 +5,23 @@
   padding-top: 2rem; /* Add padding at the top of the projects section */
 }
 
+.more-projects-visit {
+  font-size: 1.4rem;
+  margin: 3rem 1rem;
+}
+
+.more-projects-visit a {
+  /* margin: 1rem; */
+  margin: 0.8rem;
+  color: #000;
+  cursor: pointer;
+  text-decoration-color: var(--color-rustic-red);
+}
+
+.more-projects-visit a:hover {
+  font-weight: 600;
+}
+
 .show-more-button {
   font-size: 1.4rem; /* Set the font size for the show more/less button */
   background-color: transparent; /* Set the background of the button as transparent */
@@ -32,4 +49,10 @@
 
 .scroll-down-icon:hover {
   font-size: 2rem; /* Change font size of the scroll-down icon on hover */
+}
+
+@media screen and (min-width: 590px) {
+  .more-projects-visit {
+    font-size: 1.6rem;
+  }
 }
