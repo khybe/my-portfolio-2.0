@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; // Import React and necessary hooks
+import React, { useState, useEffect, useMemo } from "react"; // Import React and necessary hooks
 import Fade from "react-reveal/Fade"; // Import Fade effect for animations
 
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai"; // Import icons from react-icons/ai library
@@ -12,16 +12,16 @@ const MyWork = () => {
   const [showMore, setShowMore] = useState(false); // State for handling show more/less
   const [selectedProject, setSelectedProject] = useState(null); // State for the selected project
 
-  const handleResize = () => {
+  const handleResize = useMemo(() => {
     setShowMore(false); // Reset showMore state on window resize
-  };
+  }, [setShowMore]);
 
   useEffect(() => {
     window.addEventListener("resize", handleResize); // Event listener for window resize
     return () => {
       window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
     };
-  }, []);
+  }, [handleResize]);
 
   const openModalHandler = (project) => {
     setSelectedProject(project); // Set the selected project for modal
