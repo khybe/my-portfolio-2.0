@@ -4,6 +4,7 @@ import simonSaysImage from "../../../assets/simonSays.png";
 import pigGameImage from "../../../assets/pigGame.png";
 import yourplaceImage from "../../../assets/yourplace.png";
 import todoAppImage from "../../../assets/todoApp.png";
+import eShopImage from "../../../assets/react-ts-redux-e-shop.png";
 
 // Data for different projects
 export const projectsData = [
@@ -64,5 +65,12 @@ export const projectsData = [
     description: `Practice project: a powerful ToDo App using TypeScript. Offers seamless task management with dynamic task addition and deletion. Experience real-world TypeScript application and Context API for effective state management, enhancing your development skills.`,
     githubLink: "https://github.com/khybe/todo-react-ts-guide",
     toolSet: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
+  },
+  {
+    id: "p6",
+    title: "React TS Redux E Shop",
+    image: eShopImage,
+    description: `Dive into a feature-rich E-Commerce web app built with React, TypeScript, and Redux for efficient state management. Explore a seamless shopping experience, dynamic UIs, and cutting-edge technologies for an enhanced online presence.`,
+    toolSet: ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Redux"],
   },
 ];
