@@ -71,6 +71,7 @@ export const projectsData = [
     title: "React TS Redux E Shop",
     image: eShopImage,
     description: `Dive into a feature-rich E-Commerce web app built with React, TypeScript, and Redux for efficient state management. Explore a seamless shopping experience, dynamic UIs, and cutting-edge technologies for an enhanced online presence.`,
+    githubLink: "https://github.com/khybe/react-ts-redux-e-shop-tutorial",
     toolSet: ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Redux"],
   },
 ];
