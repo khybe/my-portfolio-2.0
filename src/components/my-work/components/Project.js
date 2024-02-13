@@ -7,7 +7,17 @@ const Project = ({ project, onOpenModal }) => {
       <img src={project.image} alt={project.title} />
     </a>
   ) : (
-    <img src={project.image} alt={project.title} />
+    <a
+      href={project.githubLink}
+      target="_blank"
+      rel="noreferrer"
+      className={styles["image-container"]}
+    >
+      <img src={project.image} alt={project.title} />
+      <p className={styles["warning-message"]}>
+        This project is only available as source code on GitHub.
+      </p>
+    </a>
   );
 
   return (
