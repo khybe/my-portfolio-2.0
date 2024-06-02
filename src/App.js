@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header"; // Import the Header component
 import Home from "./components/home/Home"; // Import the Home component
 import Footer from "./components/footer/Footer";
+import LoadingSpinner from "./UI/LoadingSpinner";
 
 const MyWork = lazy(() => import("./components/my-work/MyWork"));
 const ContactMe = lazy(() => import("./components/contact/ContactMe"));
@@ -14,7 +15,7 @@ function App() {
     <div>
       <Header /> {/* Render the Header component */}
       <main>
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<LoadingSpinner asOverlay />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutMe />} />
