@@ -3,6 +3,7 @@
 #projects {
   text-align: center; /* Center-align text within the projects section */
   padding-top: 2rem; /* Add padding at the top of the projects section */
+  margin-top: 90px;
 }
 
 .more-projects-visit {

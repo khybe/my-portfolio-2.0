@@ -6,7 +6,7 @@
 
 /* Styling for the about profile image */
 .aboutProfileImage {
-  border: 0.1px solid rgb(82, 78, 78); /* Adding a thin border to the profile image */
+  border: 0.1px solid rgb(82, 78, 78);
   width: 75%; /* Set width for the profile image */
   max-width: 30rem; /* Maximum width for the profile image */
   border-radius: 48% 48% 0 0; /* Applying a specific border radius to shape the image */

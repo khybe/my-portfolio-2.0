@@ -1,5 +1,6 @@
 /* Styles for the #contact section */
 #contact {
+  max-width: 100vw;
   background-color: var(
     --color-charcoal
   ); /* Set the background color using a custom variable */
@@ -7,8 +8,9 @@
   flex-direction: column; /* Arrange flex items in a column */
   justify-content: space-around; /* Distribute space evenly around flex items */
   text-align: center; /* Align text to the center */
-  padding: 3rem 0; /* Apply padding to the top and bottom */
+  padding: 6rem 0; /* Apply padding to the top and bottom */
   color: #fff; /* Set the text color to white */
+  margin-top: 61px;
 }
 
 /* Media Query for 768px and larger screens */

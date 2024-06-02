@@ -1,11 +1,13 @@
 #about {
+  max-width: 100vw;
   display: flex; /* Flex container for the 'about' section */
   flex-direction: column; /* Organize contents in a column */
   background-color: var(
     --color-charcoal
   ); /* Background color using a CSS variable */
   color: #fff; /* Text color */
-  padding: 4rem 1rem; /* Padding for the content */
+  padding: 8rem 1rem; /* Padding for the content */
+  margin-top: 61px;
   font-size: 1.6rem; /* Font size for text */
 }
 

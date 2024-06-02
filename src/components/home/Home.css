@@ -3,6 +3,7 @@
   position: relative;
   padding: 0.5rem 0;
   text-align: center;
+  padding-top: 20px;
 }
 
 /* Styles for the content within the hero section */
@@ -50,7 +51,7 @@
 .helloAnimeContainer {
   max-width: 80rem;
   position: absolute;
-  top: 12rem; /* Position from the top of the hero section */
+  top: 16rem; /* Position from the top of the hero section */
   left: 0;
   right: 0;
   margin: auto;
@@ -59,7 +60,8 @@
 
 /* Styles for images within the hello anime container */
 .helloAnimeContainer img {
-  max-width: 100%;
+  max-width: 94%;
+  padding-right: 10px;
   height: auto; /* Maintain aspect ratio for images */
 }
 
@@ -90,7 +92,7 @@
 
 @media screen and (min-width: 600px) {
   .heroContent {
-    margin-top: 28rem;
+    margin-top: 32rem;
   }
 
   .tagline {

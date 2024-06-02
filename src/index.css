@@ -24,6 +24,7 @@ html {
 
 /* Apply a basic font and background color to the body */
 body {
+  width: 100vw;
   max-width: 120rem;
   margin: auto;
   font-family: var(

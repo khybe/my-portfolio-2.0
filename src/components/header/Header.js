@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import NavLinks from "./components/NavLinks"; // Import NavLinks component
 import Backdrop from "../../UI/Backdrop"; // Import Backdrop component
@@ -39,12 +40,10 @@ function Header() {
         {isMobile && isOpen && <Backdrop onClick={HandleNavbarToggle} />}{" "}
         {/* Conditional rendering for the Backdrop component */}
         <div className={logo}>
-          <a href="#hero">
-            {" "}
-            {/* Logo image linking to the hero section */}
-            <img src={logoImage} alt="Khaibar Portfolio Logo" />{" "}
+          <Link to="/">
+            <img src={logoImage} alt="Khaibar Portfolio Logo" />
             {/* Display logo image */}
-          </a>
+          </Link>
         </div>
         <button
           className={`${menuButton} ${isOpen ? open : ""}`} // Conditionally apply classes for the menu button

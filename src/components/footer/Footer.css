@@ -1,12 +1,13 @@
 /* Style the footer */
 .footer {
-  background-color: white; /* Background color of the footer */
-  color: #000; /* Text color */
-  text-align: center; /* Align text content to the center */
-  padding: 2rem 0; /* Padding around the footer content */
-  width: 100%; /* Full width */
-  font-size: 1.4rem; /* Font size */
-  letter-spacing: 0.5px; /* Letter spacing */
+  background-color: var(--color-charcoal);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid white;
 }
 
 /* Style footer elements */
@@ -15,7 +16,7 @@
 }
 
 .footer-element a {
-  color: #000; /* Anchor (link) color */
+  color: white; /* Anchor (link) color */
   text-decoration: none; /* Remove underline from links */
   font-weight: 500; /* Set the font weight */
 }

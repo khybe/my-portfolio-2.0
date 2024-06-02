@@ -42,8 +42,8 @@
 }
 
 /* Styles for the active link in the navigation */
-.active a {
-  border-bottom: 2px solid var(--color-rustic-red); /* Add a bottom border for the active link */
+.active {
+  border-bottom: 2px solid var(--color-rustic-red);
   font-weight: 800; /* Set a higher font weight for the active link */
 }
 

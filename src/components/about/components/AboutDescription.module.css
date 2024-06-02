@@ -7,7 +7,7 @@
 }
 
 .aboutDescription p {
-  border: 0.1px solid rgb(82, 78, 78); /* Add a thin border to paragraphs within the AboutDescription */
+  border: 0.1px solid rgb(82, 78, 78);
   border-radius: 4px; /* Apply border radius */
   padding: 1.5rem; /* Add padding to the paragraphs in AboutDescription */
   text-shadow: 2px 2px 4px #000; /* Apply text shadow effect */
