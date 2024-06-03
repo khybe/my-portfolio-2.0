@@ -1,9 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade"; // Importing the Fade component from 'react-reveal'
 
-import profileImage from "../../../assets/profileImage.png"; // Importing the profile image
-import Button from "../../../UI/Button"; // Importing the Button component
-import SocialLinks from "../../../UI/SocialLinks"; // Importing the SocialLinks component
+// ../../../assets/profileImage.png
+import profileImage from "../../assets/profileImage.png"; // Importing the profile image
+import Button from "../../UI/Button"; // Importing the Button component
+import SocialLinks from "../../UI/SocialLinks"; // Importing the SocialLinks component
 import styles from "./AboutProfile.module.css"; // Importing styles from the CSS module
 
 const AboutProfile = () => {

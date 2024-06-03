@@ -1,10 +1,10 @@
 // Import images for each project
-import guessMyNumberImage from "../../../assets/guessMyNumber.png";
-import simonSaysImage from "../../../assets/simonSays.png";
-import pigGameImage from "../../../assets/pigGame.png";
-import yourplaceImage from "../../../assets/yourplace.png";
-import todoAppImage from "../../../assets/todoApp.png";
-import eShopImage from "../../../assets/react-ts-redux-e-shop.png";
+import guessMyNumberImage from "../../assets/guessMyNumber.png";
+import simonSaysImage from "../../assets/simonSays.png";
+import pigGameImage from "../../assets/pigGame.png";
+import yourplaceImage from "../../assets/yourplace.png";
+import todoAppImage from "../../assets/todoApp.png";
+import eShopImage from "../../assets/react-ts-redux-e-shop.png";
 
 // Data for different projects
 export const projectsData = [

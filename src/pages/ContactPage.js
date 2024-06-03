@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-import ContactInfo from "./components/ContactInfo";
-import Form from "./components/Form";
-import useInput from "../../hooks/use-input";
-import "./ContactMe.css";
+import ContactInfo from "../components/contact/ContactInfo";
+import ContactForm from "../components/contact/ContactForm";
+import useInput from "../hooks/use-input";
+import "./CSS/ContactPage.css";
 
-const ContactMe = () => {
+const ContactPage = () => {
   const form = useRef(); // Create a reference to the form for sending email
 
   // Handling different input fields using custom hook useInput for form validation
@@ -183,7 +183,7 @@ const ContactMe = () => {
       {/* Render contact information */}
       <ContactInfo />
       {/* Render the Form component with input field configurations */}
-      <Form
+      <ContactForm
         formIsValid={formIsValid}
         nameInputConfig={nameInputConfig}
         emailInputConfig={emailInputConfig}
@@ -199,4 +199,4 @@ const ContactMe = () => {
   );
 };
 
-export default ContactMe;
+export default ContactPage;

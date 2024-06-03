@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Fade from "react-reveal/Fade"; // Importing the Fade effect
 import Input from "./Input"; // Importing the Input component
-import Button from "../../../UI/Button"; // Importing the Button component
-import "./Form.css"; // Importing the CSS for the Form component
+import Button from "../../UI/Button"; // Importing the Button component
+import "./ContactForm.css"; // Importing the CSS for the Form component
 
 // Form component
 const Form = (props) => {

@@ -2,13 +2,13 @@ import React, { useState, useEffect, useMemo } from "react"; // Import React and
 import Fade from "react-reveal/Fade"; // Import Fade effect for animations
 
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai"; // Import icons from react-icons/ai library
-import { projectsData } from "./components/projectsData"; // Import project data
+import { projectsData } from "../components/work/projectsData"; // Import project data
 
-import ProjectList from "./components/ProjectList"; // Import the ProjectList component
-import DetailModal from "./components/DetailModal"; // Import the DetailModal component
-import "./MyWork.css"; // Import styles for MyWork component
+import ProjectList from "../components/work/ProjectList"; // Import the ProjectList component
+import DetailModal from "../components/work/DetailModal"; // Import the DetailModal component
+import "./CSS/WorkPage.css"; // Import styles for MyWork component
 
-const MyWork = () => {
+const WorkPage = () => {
   const [showMore, setShowMore] = useState(false); // State for handling show more/less
   const [selectedProject, setSelectedProject] = useState(null); // State for the selected project
 
@@ -81,4 +81,4 @@ const MyWork = () => {
   );
 };
 
-export default MyWork; // Export the MyWork component as the default export
+export default WorkPage; // Export the MyWork component as the default export

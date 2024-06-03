@@ -1,8 +1,9 @@
 import React from "react"; // Import React library
 import ReactDOM from "react-dom"; // Import ReactDOM library
 import { AiOutlineClose } from "react-icons/ai"; // Import Close icon from react-icons
-import Button from "../../../UI/Button"; // Import Button component
-import Backdrop from "../../../UI/Backdrop"; // Import Backdrop component
+
+import Button from "../../UI/Button"; // Import Button component
+import Backdrop from "../../UI/Backdrop"; // Import Backdrop component
 import styles from "./DetailModal.module.css"; // Import styles from DetailModal module
 
 const DetailModal = ({ project, onCloseModal, onOpenModal }) => {
