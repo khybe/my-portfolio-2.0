@@ -27,6 +27,7 @@ export const projectsData = [
       "MongoDB",
       "NodeMailer",
       "React API Context",
+      "NodeMailer",
     ],
   },
   {
