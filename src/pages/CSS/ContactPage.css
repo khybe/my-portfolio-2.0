@@ -25,5 +25,6 @@
 @media (min-width: 1200px) {
   #contact {
     border-radius: 6px; /* Add a border radius to give rounded corners */
+    padding-top: 120px;
   }
 }
