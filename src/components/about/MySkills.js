@@ -1,7 +1,7 @@
 import styles from "./MySkills.module.css"; // Importing CSS module
 
 const MySkills = () => {
-  const { skillsContainer, specializedSkills, familiarSkills } = styles; // Assigning CSS classes from the imported module
+  const { skillsContainer, specializedSkills } = styles; // Assigning CSS classes from the imported module
 
   return (
     <div className={skillsContainer}>
