@@ -8,7 +8,7 @@ const MySkills = () => {
       {/* Parent container for all skills */}
       <div className={specializedSkills}>
         {/* Container for specialized skills */}
-        <h3>Specialized</h3>
+        <h3>Specialized Skills and Tools</h3>
         <ul>
           {/* List of specialized skills */}
           <li>
@@ -21,7 +21,7 @@ const MySkills = () => {
             ⎼ <span>JavaScript</span>
           </li>
           <li>
-            ⎼ <span>React</span>
+            ⎼ <span>MERN Stack (MongoDB, Express, React, Node)</span>
           </li>
           <li>
             ⎼ <span>React Hooks & Packages</span>
@@ -30,7 +30,10 @@ const MySkills = () => {
             ⎼ <span>Redux</span>
           </li>
           <li>
-            ⎼ <span>ChatGPT</span>
+            ⎼ <span>TypeScript</span>
+          </li>
+          <li>
+            ⎼ <span>Unit Test</span>
           </li>
           <li>
             ⎼ <span>Bootstrap</span>
@@ -39,32 +42,10 @@ const MySkills = () => {
             ⎼ <span>Responsive Web Design</span>
           </li>
           <li>
-            ⎼ <span>Git & GitHub</span>
+            ⎼ <span>Version Control (Git and GitHub)</span>
           </li>
           <li>
             ⎼ <span>Documentation</span>
-          </li>
-        </ul>
-      </div>
-      <div className={familiarSkills}>
-        {/* Container for familiar skills */}
-        <h3>Familiar</h3>
-        <ul>
-          {/* List of familiar skills */}
-          <li>
-            ⎼ <span>Node.js</span>
-          </li>
-          <li>
-            ⎼ <span>Express.js</span>
-          </li>
-          <li>
-            ⎼ <span>MongoDB</span>
-          </li>
-          <li>
-            ⎼ <span>TypeScript</span>
-          </li>
-          <li>
-            ⎼ <span>Unit Test</span>
           </li>
         </ul>
       </div>

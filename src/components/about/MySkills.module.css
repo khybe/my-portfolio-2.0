@@ -1,6 +1,10 @@
 /* Adds left padding to the skills container */
 .skillsContainer {
-  padding-left: 4%;
+  padding-left: 1%;
+}
+
+.skillsContainer h3 {
+  padding-left: 10px;
 }
 
 /* Styles for list items inside the skills container */
@@ -37,5 +41,6 @@
 @media (min-width: 1000px) {
   .skillsContainer {
     gap: 8rem; /* Increases the gap between child elements for wider screens */
+    font-size: 20px;
   }
 }
