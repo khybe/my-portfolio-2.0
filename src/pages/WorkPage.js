@@ -25,10 +25,13 @@ const WorkPage = () => {
 
   const openModalHandler = (project) => {
     setSelectedProject(project); // Set the selected project for modal
+
+    return true;
   };
 
   const closeModalHandler = () => {
     setSelectedProject(null); // Close the modal by resetting the selected project
+    return false;
   };
 
   return (
@@ -74,7 +77,7 @@ const WorkPage = () => {
         <DetailModal
           project={selectedProject} // Pass the selected project to DetailModal component
           onCloseModal={closeModalHandler} // Handler for closing the modal
-          onOpenModal={openModalHandler} // Handler for opening the modal
+          onOpenModal={openModalHandler}
         />
       )}
     </section>
