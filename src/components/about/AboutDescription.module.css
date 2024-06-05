@@ -11,6 +11,9 @@
   border-radius: 4px; /* Apply border radius */
   padding: 1.5rem; /* Add padding to the paragraphs in AboutDescription */
   text-shadow: 2px 2px 4px #000; /* Apply text shadow effect */
+  font-size: 20px;
+  /* letter-spacing: 2px; */
+  line-height: 28px;
 }
 
 @media (min-width: 500px) {
@@ -26,6 +29,6 @@
   }
 
   .aboutDescription p {
-    font-size: 1.8rem; /* Change the font size of paragraphs within AboutDescription */
+    font-size: 22px;
   }
 }
