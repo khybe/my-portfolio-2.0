@@ -24,7 +24,7 @@ const AboutProfile = () => {
         />
         <h2 className={name}>Khaibar Saadat</h2>{" "}
         {/* Name displayed with a specific class */}
-        <h3 className={profession}>Front-End Developer</h3>{" "}
+        <h3 className={profession}>Full-Stack Developer</h3>{" "}
         {/* Profession displayed with a specific class */}
         <div className={buttons}>
           {" "}

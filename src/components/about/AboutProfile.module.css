@@ -6,10 +6,16 @@
 
 /* Styling for the about profile image */
 .aboutProfileImage {
-  border: 0.1px solid rgb(82, 78, 78);
+  border: 0.1px solid rgb(114, 111, 111);
   width: 75%; /* Set width for the profile image */
+  height: 280px;
   max-width: 30rem; /* Maximum width for the profile image */
-  border-radius: 48% 48% 0 0; /* Applying a specific border radius to shape the image */
+  border-radius: 60% 60% 0 0; /* Applying a specific border radius to shape the image */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 30%,
+    rgb(27, 27, 27) 80%
+  );
 }
 
 /* Styling for the name within the about profile */
