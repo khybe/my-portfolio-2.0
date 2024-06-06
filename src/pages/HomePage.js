@@ -13,8 +13,22 @@ import "./CSS/HomePage.css"; // Importing the associated CSS file for the Home c
 const HomePage = () => {
   return (
     <section id="hero">
-      {/* Hero section for the homepage */}
-      <div className="heroContent">
+      <div className="presentation-container">
+        {/* Container for the animated greeting */}
+        <Zoom>
+          <picture>
+            {/* Display responsive images based on the viewport width */}
+            <source srcSet={greetingImageSmall} media="(max-width: 768px)" />
+            {/* Responsive image for smaller screens */}
+            <source srcSet={greetingImageMedium} media="(max-width: 1152px)" />
+            {/* Responsive image for medium screens */}
+            <img
+              src={greetingImageLarge}
+              alt="Hello, I am Khaibar! animation"
+            />
+            {/* Larger image for bigger screens */}
+          </picture>
+        </Zoom>
         {/* Div for the hero content */}
         <LightSpeed left>
           <p className="tagline">
@@ -22,40 +36,20 @@ const HomePage = () => {
             {/* Tagline indicating the role */}
           </p>
         </LightSpeed>
-        <div className="mottoContainer">
-          {/* Container for the developer's motto */}
-          <LightSpeed right>
-            <p>
-              I believe in brevity and minimalism to create dynamic, sleek, and
-              user-friendly web apps. {/* Developer's design philosophy */}
-            </p>
-          </LightSpeed>
-          <a href="mailto:saadat.khaibar@gmail.com">
-            {/* Link for contacting via email */}
-            <img src={hireMeGif} alt="Hire me animation in the form of a GIF" />
-            {/* GIF for the hiring link */}
-          </a>
-        </div>
-        <div className="helloAnimeContainer">
-          {/* Container for the animated greeting */}
-          <Zoom>
-            <picture>
-              {/* Display responsive images based on the viewport width */}
-              <source srcSet={greetingImageSmall} media="(max-width: 768px)" />
-              {/* Responsive image for smaller screens */}
-              <source
-                srcSet={greetingImageMedium}
-                media="(max-width: 1152px)"
-              />
-              {/* Responsive image for medium screens */}
-              <img
-                src={greetingImageLarge}
-                alt="Hello, I am Khaibar! animation"
-              />
-              {/* Larger image for bigger screens */}
-            </picture>
-          </Zoom>
-        </div>
+      </div>
+      <div className="mottoContainer">
+        {/* Container for the developer's motto */}
+        <LightSpeed right>
+          <p>
+            I believe in brevity and minimalism to create dynamic, sleek, and
+            user-friendly web apps. {/* Developer's design philosophy */}
+          </p>
+        </LightSpeed>
+        <a href="mailto:saadat.khaibar@gmail.com">
+          {/* Link for contacting via email */}
+          <img src={hireMeGif} alt="Hire me animation in the form of a GIF" />
+          {/* GIF for the hiring link */}
+        </a>
       </div>
     </section>
   );

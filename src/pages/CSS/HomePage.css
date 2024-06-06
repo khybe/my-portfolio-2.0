@@ -3,16 +3,20 @@
   position: relative;
   padding: 0.5rem 0;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
-/* Styles for the content within the hero section */
-.heroContent {
-  max-width: 1200px;
+/* Styles for the hello anime container */
+.presentation-container {
+  max-width: 80rem;
   margin: auto;
-  margin-top: 22rem; /* Margin from the top of the hero section */
-  display: flex;
-  flex-direction: column;
+  margin-top: 140px;
+}
+
+/* Styles for images within the hello anime container */
+.presentation-container img {
+  max-width: 94%;
+  padding-right: 10px;
 }
 
 /* Styles for the tagline text */
@@ -20,6 +24,8 @@
   font-size: 1.8rem;
   padding-top: 3rem; /* Spacing above the tagline */
   font-weight: 600;
+  margin-top: -20%;
+  margin-bottom: 120px;
 }
 
 /* Styles for the span within the tagline text */
@@ -47,30 +53,8 @@
   transform: scale(1.2); /* Scale the image to 120% on hover */
 }
 
-/* Styles for the hello anime container */
-.helloAnimeContainer {
-  max-width: 80rem;
-  position: absolute;
-  top: 16rem; /* Position from the top of the hero section */
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: -1; /* Set a negative z-index to position it behind other content */
-}
-
-/* Styles for images within the hello anime container */
-.helloAnimeContainer img {
-  max-width: 94%;
-  padding-right: 10px;
-  height: auto; /* Maintain aspect ratio for images */
-}
-
 /* Media queries for responsive design */
 @media screen and (min-width: 400px) {
-  .heroContent {
-    margin-top: 25rem;
-  }
-
   .tagline {
     font-size: 2rem;
   }
@@ -91,10 +75,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .heroContent {
-    margin-top: 32rem;
-  }
-
   .tagline {
     font-size: 2.4rem;
   }
@@ -106,10 +86,6 @@
 }
 
 @media screen and (min-width: 740px) {
-  .heroContent {
-    margin-top: 34rem;
-  }
-
   .tagline {
     font-size: 2.5rem;
   }
@@ -120,6 +96,10 @@
 }
 
 @media screen and (min-width: 900px) {
+  #hero {
+    padding-top: 40px;
+  }
+
   .tagline {
     font-size: 3.2rem;
   }
