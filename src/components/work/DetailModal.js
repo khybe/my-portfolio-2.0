@@ -7,14 +7,21 @@ import Modal from "../../UI/Modal";
 import styles from "./DetailModal.module.css";
 
 const DetailModal = ({ project, onCloseModal, onOpenModal }) => {
-  const modalContent = (
-    <div className={styles["detail-content"]}>
+  const isOpen = project !== null; // Check if a project is selected
+
+  const modalHeader = (
+    <div className="detail-header">
       <AiOutlineClose
         onClick={onCloseModal}
         className={styles["detail-content__close-icon"]}
         size="2.5rem"
       />
       <h2>{project.title}</h2>
+    </div>
+  );
+
+  const modalContent = (
+    <div className={styles["detail-content"]}>
       <div className={styles["detail-description"]}>
         <p>{project.description}</p>
       </div>
@@ -33,9 +40,9 @@ const DetailModal = ({ project, onCloseModal, onOpenModal }) => {
 
   return (
     <Modal
-      show={onOpenModal}
+      show={isOpen}
       onCancel={onCloseModal}
-      header={project.title}
+      header={modalHeader}
       footer={
         <>
           {project.projectLink && (

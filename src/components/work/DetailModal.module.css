@@ -1,28 +1,21 @@
 /* Style for the content inside the modal */
 .detail-content {
-  position: relative;
   font-size: 1.6rem;
 }
 
 .detail-content__close-icon {
   position: absolute;
-  top: 0;
+  top: 15px;
   right: 12px;
   cursor: pointer;
 }
 
-/* Style for the modal title */
-.detail-content h2 {
-  margin: 0 0 3rem 1rem;
-  font-size: 2.4rem;
-}
-
 /* Style for the modal description */
 .detail-description {
-  line-height: 2.3rem;
+  line-height: 2.4rem;
   padding: 2rem 1rem;
-  border-top: 0.5px solid #807575;
   border-bottom: 0.5px solid #807575;
+  margin-bottom: 20px;
 }
 
 .detail-description p {
@@ -30,8 +23,7 @@
 }
 
 .detail-toolSet h5 {
-  margin: 1rem;
-  margin-bottom: 0;
+  margin: 10px;
 }
 
 .detail-toolSet ul {
@@ -39,8 +31,7 @@
   flex-wrap: wrap;
   gap: 1rem 2rem;
   padding: 1.5rem;
-  border-bottom: 0.5px solid #807575;
-  margin-bottom: 1rem;
+  margin-bottom: -10px;
 }
 
 .detail-toolSet ul li {
@@ -48,11 +39,10 @@
 }
 
 .detail-content__button {
-  margin: 0;
   padding: 4px 6px;
   width: 14rem;
-  background-color: var(--color-charcoal);
-  color: #fff;
+  background-color: white;
+  font-weight: 600;
   text-align: center;
   font-size: 16px;
 }
@@ -76,7 +66,7 @@
   }
 
   .detail-description {
-    line-height: 2.5rem;
+    line-height: 2.6rem;
     padding: 2rem 1.5rem;
   }
 
