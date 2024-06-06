@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 
 import ContactInfo from "../components/contact/ContactInfo";
 import ContactForm from "../components/contact/ContactForm";
 import useInput from "../hooks/use-input";
+
 import "./CSS/ContactPage.css";
 
 const ContactPage = () => {
@@ -62,38 +62,6 @@ const ContactPage = () => {
   if (enteredNameIsValid && enteredEmailIsValid && enteredMessageIsValid) {
     formIsValid = true;
   }
-
-  // Sending email on form submission
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    if (formIsValid) {
-      // Using emailjs to send the form data
-      emailjs
-        .sendForm(
-          process.env.REACT_APP_EMAILJS_SERVICE_KEY,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_KEY,
-          form.current,
-          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        )
-        .then(
-          (result) => {
-            console.log(result.text); // Log email send result
-            console.log({
-              name: enteredName,
-              email: enteredEmail,
-              phone: enteredPhone,
-              address: enteredAddress,
-              subject: enteredSubject,
-              message: enteredMessage,
-            }); // Log the form data
-          },
-          (error) => {
-            console.log(error.text); // Log any error during email sending
-          }
-        );
-    }
-  };
 
   // Resetting form inputs
   const resetForm = () => {
@@ -192,7 +160,6 @@ const ContactPage = () => {
         subjectInputConfig={subjectInputConfig}
         messageInputConfig={messageInputConfig}
         resetForm={resetForm}
-        onSubmit={sendEmail}
         formRef={form}
       />
     </section>
