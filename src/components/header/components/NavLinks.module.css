@@ -31,7 +31,52 @@
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: 0.3s; /* Add a smooth transition effect for anchor tags */
+  transition: color 0.3s; /* Add a smooth transition effect for anchor tags */
+  position: relative; /* Needed for the ::after pseudo-element */
+}
+
+/* Styles when hovering over anchor tags */
+.navLinks a:hover {
+  color: var(--color-rustic-red); /* Change color on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow effect on hover */
+  font-weight: 800; /* Adjust font weight on hover */
+}
+
+/* Basic styles for the navigation links (Mobile-first) */
+.navLinks {
+  list-style: none;
+  display: none; /* Hide the navigation links by default on smaller screens */
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background-color: var(--color-charcoal);
+  width: 70%;
+  text-align: center;
+  border-radius: 8px;
+  height: 65vh; /* Set the height of the navigation links for smaller screens */
+}
+
+/* When the navigation links are open */
+.navLinks.open {
+  display: flex;
+  min-height: 26rem; /* Set a minimum height when open for smaller screens */
+}
+
+/* Styles for each list item within the navigation links */
+.navLinks li {
+  margin: 2rem; /* Apply margin to each list item */
+  margin-right: 20px;
+}
+
+/* Styles for the anchor tags within the navigation links */
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s; /* Add a smooth transition effect for color */
+  position: relative; /* Needed for the ::after pseudo-element */
 }
 
 /* Styles when hovering over anchor tags */
@@ -42,9 +87,22 @@
 }
 
 /* Styles for the active link in the navigation */
-.active {
-  border-bottom: 2px solid var(--color-rustic-red);
+.navLinks a.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(-20deg);
+  bottom: 6px; /* Adjust as needed to position the line below the text */
+  height: 2px; /* Thickness of the line */
+  width: 100%; /* Make the line span the width of the link */
+  min-width: 70px;
+  background-color: var(--color-rustic-red);
+  transition: width 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+.navLinks a.active {
   font-weight: 800; /* Set a higher font weight for the active link */
+  color: var(--color-rustic-red);
 }
 
 /* Media query for larger screens (Desktop styles) */
