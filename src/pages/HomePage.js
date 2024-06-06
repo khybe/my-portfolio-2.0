@@ -29,13 +29,19 @@ const HomePage = () => {
             {/* Larger image for bigger screens */}
           </picture>
         </Zoom>
-        {/* Div for the hero content */}
-        <LightSpeed left>
-          <p className="tagline">
-            A <span>Front-end Developer.</span>{" "}
-            {/* Tagline indicating the role */}
-          </p>
-        </LightSpeed>
+        <div className="tagline-container">
+          <LightSpeed left>
+            <p className="tagline">
+              A Full-Stack Freelancer, Specialized in Frontend.
+              {/* Tagline indicating the role */}
+            </p>
+          </LightSpeed>
+          <LightSpeed right>
+            <p className="tagline consultation-info">
+              Currently offering Free Consultation!
+            </p>
+          </LightSpeed>
+        </div>
       </div>
       <div className="mottoContainer">
         {/* Container for the developer's motto */}

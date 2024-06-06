@@ -3,7 +3,7 @@
   position: relative;
   padding: 0.5rem 0;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 /* Styles for the hello anime container */
@@ -19,18 +19,34 @@
   padding-right: 10px;
 }
 
+.tagline-container {
+  margin-top: -20%;
+  margin-bottom: 80px;
+}
+
 /* Styles for the tagline text */
 .tagline {
   font-size: 1.8rem;
+  padding: 10px;
   padding-top: 3rem; /* Spacing above the tagline */
   font-weight: 600;
-  margin-top: -20%;
-  margin-bottom: 120px;
+  line-height: 28px;
 }
 
-/* Styles for the span within the tagline text */
-.tagline span {
-  color: var(--color-rustic-red); /* Apply a custom color to the span */
+.consultation-info {
+  position: relative;
+  font-weight: 500;
+}
+
+.consultation-info::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: var(--color-rustic-red);
+  transform: rotate(-2deg) skewX(-40deg);
 }
 
 /* Styles for the motto container */
