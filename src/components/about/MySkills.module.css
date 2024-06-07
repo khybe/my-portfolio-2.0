@@ -14,9 +14,14 @@
   text-shadow: 2px 2px 4px #000; /* Applies a text shadow for a visual effect */
 }
 
-/* Styles for the span elements inside list items */
-.skillsContainer span {
+/* Styles for the strong elements inside list items */
+.skillsContainer strong {
   margin-left: 1rem; /* Provides space between list bullet and the text content */
+}
+
+/* Descriptive class for small elements */
+.subSkill {
+  font-style: italic;
 }
 
 /* Media query for small screens (min-width: 350px) */

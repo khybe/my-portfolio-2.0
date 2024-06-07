@@ -1,7 +1,7 @@
 import styles from "./MySkills.module.css"; // Importing CSS module
 
 const MySkills = () => {
-  const { skillsContainer, specializedSkills } = styles; // Assigning CSS classes from the imported module
+  const { skillsContainer, specializedSkills, subSkill } = styles; // Assigning CSS classes from the imported module
 
   return (
     <div className={skillsContainer}>
@@ -12,40 +12,50 @@ const MySkills = () => {
         <ul>
           {/* List of specialized skills */}
           <li>
-            ⎼ <span>HTML</span>
+            ⎼ <strong>HTML</strong>
           </li>
           <li>
-            ⎼ <span>CSS</span>
+            ⎼ <strong>CSS</strong>
           </li>
           <li>
-            ⎼ <span>JavaScript</span>
+            ⎼ <strong>JavaScript</strong>
           </li>
           <li>
-            ⎼ <span>MERN Stack (MongoDB, Express, React, Node)</span>
+            ⎼{" "}
+            <strong>
+              MERN Stack{" "}
+              <small className={subSkill}>
+                (MongoDB, Express, React, Node)
+              </small>
+            </strong>
           </li>
           <li>
-            ⎼ <span>React Hooks & Packages</span>
+            ⎼ <strong>React Hooks & Packages</strong>
           </li>
           <li>
-            ⎼ <span>Redux</span>
+            ⎼ <strong>Redux</strong>
           </li>
           <li>
-            ⎼ <span>TypeScript</span>
+            ⎼ <strong>TypeScript</strong>
           </li>
           <li>
-            ⎼ <span>Unit Test</span>
+            ⎼ <strong>Unit Test</strong>
           </li>
           <li>
-            ⎼ <span>Bootstrap</span>
+            ⎼ <strong>Bootstrap</strong>
           </li>
           <li>
-            ⎼ <span>Responsive Web Design</span>
+            ⎼ <strong>Responsive Web Design</strong>
           </li>
           <li>
-            ⎼ <span>Version Control (Git and GitHub)</span>
+            ⎼{" "}
+            <strong>
+              Version Control{" "}
+              <small className={subSkill}>(Git and GitHub)</small>
+            </strong>
           </li>
           <li>
-            ⎼ <span>Documentation</span>
+            ⎼ <strong>Documentation</strong>
           </li>
         </ul>
       </div>
