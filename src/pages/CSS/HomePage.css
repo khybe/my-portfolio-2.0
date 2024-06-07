@@ -3,14 +3,19 @@
   position: relative;
   padding: 0.5rem 0;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 /* Styles for the hello anime container */
 .presentation-container {
-  max-width: 80rem;
+  background-color: var(--color-charcoal);
+  width: 100%;
+  max-width: 100rem;
+  padding-top: 40px;
+  padding-bottom: 2px;
   margin: auto;
   margin-top: 140px;
+  color: #fff;
 }
 
 /* Styles for images within the hello anime container */
@@ -20,13 +25,13 @@
 }
 
 .tagline-container {
-  margin-top: -20%;
+  margin-top: -25%;
   margin-bottom: 80px;
 }
 
 /* Styles for the tagline text */
 .tagline {
-  font-size: 1.8rem;
+  font-size: 18px;
   padding: 10px;
   padding-top: 3rem; /* Spacing above the tagline */
   font-weight: 600;
@@ -36,14 +41,15 @@
 .consultation-info {
   position: relative;
   font-weight: 500;
+  margin-bottom: -30px;
 }
 
 .consultation-info::after {
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 25%;
-  width: 50%;
+  left: 30%;
+  width: 40%;
   height: 2px;
   background-color: var(--color-rustic-red);
   transform: rotate(-2deg) skewX(-40deg);
@@ -54,7 +60,7 @@
   max-width: 80rem;
   margin: auto;
   font-size: 1.4rem;
-  margin-top: 4rem; /* Margin from the top of the motto container */
+  margin-top: 12rem; /* Margin from the top of the motto container */
   padding: 0 1rem; /* Padding on the sides of the motto container */
 }
 
@@ -112,12 +118,16 @@
 }
 
 @media screen and (min-width: 900px) {
-  #hero {
-    padding-top: 40px;
+  .presentation-container {
+    border-radius: 12px;
   }
 
   .tagline {
     font-size: 3.2rem;
+  }
+
+  .consultation-info {
+    margin-top: 60px;
   }
 
   .mottoContainer {
