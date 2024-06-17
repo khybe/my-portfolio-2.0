@@ -9,6 +9,7 @@
   padding: 8rem 1rem; /* Padding for the content */
   margin-top: 61px;
   font-size: 1.6rem; /* Font size for text */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .about-content {
