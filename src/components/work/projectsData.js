@@ -25,7 +25,6 @@ export const projectsData = [
       "Node.js",
       "Express.js",
       "MongoDB",
-      "NodeMailer",
       "React API Context",
       "NodeMailer",
     ],
