@@ -11,10 +11,10 @@
   background-color: var(--color-charcoal);
   width: 100%;
   max-width: 100rem;
-  padding-top: 40px;
+  padding-top: 130px;
   padding-bottom: 2px;
   margin: auto;
-  margin-top: 140px;
+  margin-top: 61px;
   color: #fff;
 }
 
@@ -60,7 +60,7 @@
   max-width: 80rem;
   margin: auto;
   font-size: 1.4rem;
-  margin-top: 12rem; /* Margin from the top of the motto container */
+  margin-top: 8rem; /* Margin from the top of the motto container */
   padding: 0 1rem; /* Padding on the sides of the motto container */
 }
 
