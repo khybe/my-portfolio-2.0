@@ -1,6 +1,7 @@
 // Import images for each project
 import gronRensSyningImage from "../../assets/gronrenssyning.png";
 import tichyViolinImage from "../../assets/tichyviolin.png";
+import projectManagementAppImage from "../../assets/project-management-app.png";
 import eShopImage from "../../assets/react-ts-redux-e-shop.png";
 import todoAppImage from "../../assets/todoApp.png";
 import yourplaceImage from "../../assets/yourplace.png";
@@ -41,6 +42,17 @@ export const projectsData = [
   },
   {
     id: "p3",
+    title: "Project Management App",
+    image: projectManagementAppImage,
+    description:
+      "Built a responsive Project Management App with React and Tailwind CSS for creating, managing, and deleting projects and tasks. It features a dynamic sidebar, state management using useReducer and useContext, and localStorage for data persistence.",
+    projectLink: "https://project-management-app-51877.web.app/",
+    githubLink:
+      "https://github.com/khybe/react-tailwind-project-management-app",
+    toolSet: ["HTML", "Tailwind CSS", "JavaScript", "React.js"],
+  },
+  {
+    id: "p4",
     title: "React TS Redux E Shop",
     image: eShopImage,
     description: `Dive into a feature-rich E-Commerce web app built with React, TypeScript, and Redux for efficient state management. Explore a seamless shopping experience, dynamic UIs, and cutting-edge technologies for an enhanced online presence.`,
@@ -48,7 +60,7 @@ export const projectsData = [
     toolSet: ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Redux"],
   },
   {
-    id: "p4",
+    id: "p5",
     title: "Todo App",
     image: todoAppImage,
     description: `Practice project: a powerful ToDo App using TypeScript. Offers seamless task management with dynamic task addition and deletion. Experience real-world TypeScript application and Context API for effective state management, enhancing your development skills.`,
@@ -57,7 +69,7 @@ export const projectsData = [
   },
 
   {
-    id: "p5",
+    id: "p6",
     title: "Your Place",
     image: yourplaceImage,
     description: `Your Place is a feature-rich full-stack app offering seamless user experience with user controls, key CRUD operations, AWS S3 for image storage, and integrated Google Maps for location visualization.`,
@@ -75,7 +87,7 @@ export const projectsData = [
     ],
   },
   {
-    id: "p6",
+    id: "p7",
     title: "Guess My Number",
     image: guessMyNumberImage,
     description: `Is an online game where players try to guess a randomly generated number in the fewest number of attempts possible.
@@ -85,7 +97,7 @@ export const projectsData = [
     toolSet: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
-    id: "p7",
+    id: "p8",
     title: "Pig Game",
     image: pigGameImage,
     description: `A simple dice game where players roll a die and accumulate points, but risk losing all points for the turn if they roll a 
@@ -96,7 +108,7 @@ export const projectsData = [
     toolSet: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
-    id: "p8",
+    id: "p9",
     title: "Simon Says",
     image: simonSaysImage,
     description: `A simple interactive game built using Javascript and React.js, where the computer plays a sequence that the user must remember.
