@@ -1,8 +1,8 @@
 .modal {
-  width: 80%;
+  width: 99%;
   max-width: 60rem;
   position: fixed;
-  top: 25vh !important;
+  top: 25vh;
   left: 0;
   right: 0;
   margin: auto;
@@ -64,6 +64,10 @@
 
 @media (max-width: 500px) {
   .modal {
-    top: 8vh;
+    top: 14vh;
+  }
+
+  .modal__header h2 {
+    max-width: 96%;
   }
 }
